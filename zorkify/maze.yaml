@@ -1,0 +1,50 @@
+intro:
+  startLocation:
+    x: 3
+    y: 3
+  introBlocks:
+    - |
+      ----------------------------
+
+         /mn--                    @@"
+        /C / Y@@@@   /@@@@@@@@@@@@@&"
+       /-'     #@@@@@@@@@@@@@@@@@,"
+               v@@@@@@@@@@@@@@@@."
+                @@@@@@@@@@@@@@@,"
+                  v@@@@@@@@@@@#"
+                        @@@@@&"
+                          //*"
+                     3..*/"
+
+        you are a goose
+    - you are a goose in a maze. the word softwire is printed on your stomach and this makes you unreasonably angry.
+    - you instinctively start to follow the left wall, but the graduate recruitment process has recently been revamped, so instead of going forward, left and right your movement options are *north*, *south*, *east* or *west*.
+    - you can *look* around you
+locations:
+  - name: "13 G - Letterbox"
+    x: 3
+    y: 3
+    intros:
+      - "you are at a crossroads, to the west of a white house. there is a small *mailbox* here."
+    actions:
+      - inputs:
+          - "open mailbox"
+          - "examine mailbox"
+        outputs:
+          - "you open the mailbox with your bill. there is a letter in the mailbox."
+          - "that letter is: **g**"
+    north: true
+    south: true
+    west: true
+    east: true
+  - name: "14 R - White House"
+    x: 4
+    y: 3
+    intros:
+      - "the door to the white house is boarded up, probably following the impeachment enquiry."
+      - "the letter **r** is scratched into the board."
+      - "there are walls to the north and south."
+    north: false
+    south: false
+    west: true
+    east: true

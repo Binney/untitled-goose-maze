@@ -1,13 +1,17 @@
-const Location = require("./location");
+const { Location, Intro } = require("./code_blocks");
 yaml = require('js-yaml');
 fs   = require('fs');
 
-const locationDocs = yaml.safeLoad(fs.readFileSync('./locations.yaml', 'utf8'));
+const mazeDoc = yaml.safeLoad(fs.readFileSync('./maze.yaml', 'utf8'));
 
-const locations = locationDocs.locations.map(cellDoc => new Location(cellDoc));
+const locations = mazeDoc.locations.map(locationDoc => new Location(locationDoc));
 
-let code = locations.reduce((acc, cell) => {
-  return acc.concat(cell.renderLines().concat(""))
+const intro = new Intro(mazeDoc.intro, 13);
+
+const codeBlocks = [intro].concat(locations);
+
+let code = codeBlocks.reduce((acc, codeBlock) => {
+  return acc.concat(codeBlock.renderLines().concat(""))
 }, []).join("\n");
 
-console.log(code);
+fs.writeFileSync('./game.bas', code, 'utf8');
