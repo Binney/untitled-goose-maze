@@ -1,17 +1,17 @@
 class Location {
-  constructor(x, y, name, intro, otherCommands, north, south, west, east) {
-    this.x = x;
-    this.y = y;
-    this.name = name;
-    this.intros = intro;
-    this.otherCommands = otherCommands;
+  constructor(doc) {
+    this.x = doc.x;
+    this.y = doc.y;
+    this.name = doc.name;
+    this.intros = doc.intros;
+    this.actions = doc.actions;
     this.nextIntroIndex = 0;
     this.nextInputIndex = 10;
     this.nextOutputIndex = 50;
-    this.north = north;
-    this.south = south;
-    this.east = east;
-    this.west = west;
+    this.north = doc.north;
+    this.south = doc.south;
+    this.east = doc.east;
+    this.west = doc.west;
 
     this.lines = [];
 
@@ -50,11 +50,12 @@ class Location {
       this.addNewLine(this.getNextInputIndex(), `IF C$ = "south" GOTO ${bonkLine.number};`);
     }
 
-    Object.keys(this.otherCommands).forEach((input) => {
-      const output = this.otherCommands[input];
-      const outputLine = this.addNewLine(this.getNextOutputIndex(), `PRINT "${output.toString()}" : GOTO ${inputLine.number}`);
-      this.addNewLine(this.getNextInputIndex(), `IF C$ = "${input}" GOTO ${outputLine.number};`)
-    });
+    if (this.actions) {
+      this.actions.forEach(action => {
+        const outputLines = action.outputs.map(output => this.addNewLine(this.getNextOutputIndex(), `PRINT "${output.toString()}" : GOTO ${inputLine.number}`));
+        action.inputs.forEach(input => this.addNewLine(this.getNextInputIndex(), `IF C$ = "${input}" GOTO ${outputLines[0].number};`));
+      });
+    }
 
     this.addNewLine(this.getNextInputIndex(), `PRINT "404 command not found" : GOTO ${inputLine.number}`)
   }
@@ -108,7 +109,7 @@ function padWithZeroes(number, length) {
 }
 
 function buildPrefix(x, y) {
-  return x.toString() + padWithZeroes(y, 2);
+  return x.toString() + y.toString();
 }
 
 function lineNumber(x, y, index) {
