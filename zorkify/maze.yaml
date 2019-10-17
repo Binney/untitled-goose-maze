@@ -58,11 +58,25 @@ locations:
     south: true
     west: true
     east: true
-  - name: "3 v - TODO"
+  - name: "3 v - vengaboys"
     x: 3
     y: 1
     intros:
-      - "TODO"
+      - "As you turn the corner, you find four flamboyantly dressed dutch men and women. They're all gathered round a garishly coloured Volkswagen Type 2 minibus."
+      - "'We can't get this damn thing to start! I think it must be out of tune - if only we had the right sound to kickstart it!'"
+    actions:
+      - inputs:
+          - "honk"
+          - "honk honk"
+          - "toot"
+          - "toot toot"
+          - "boom"
+          - "boom boom"
+          - "boom boom boom boom"
+        outputs:
+          - "'Honk honk', the bus responds - and the wheels get put in motion, as the speakers start blasting out the tune of the Vengabus."
+          - "The Vengaboys all flash you the peace sign as the Volkswagen drives away."
+
     north: false
     south: true
     west: true
