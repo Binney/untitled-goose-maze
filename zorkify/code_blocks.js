@@ -35,7 +35,7 @@ class Intro extends CodeBlock {
   generateIntroBlockCode(introBlock) {
     introBlock.split(/\r?\n/).forEach(intro => this.addNewLine(this.getNextIndex(), `PRINT "${intro.toLowerCase()}"`));
     this.addNewLine(this.getNextIndex(), 'PRINT');
-    this.addNewLine(this.getNextIndex(), 'C$ = "" : INPUT ">"; C$ : PRINT');
+    this.addNewLine(this.getNextIndex(), 'INPUT ">"; C$ : PRINT');
   }
 
   getNextIndex() {
@@ -69,7 +69,7 @@ class Location extends CodeBlock {
     const startLine = this.addNewLine(this.getNextIntroIndex(), `REM ${this.name}`);
     this.intros.forEach(intro => this.addNewLine(this.getNextIntroIndex(), `PRINT "${intro.toLowerCase()}" : PRINT`));
     this.inputLine = this.addNewLine(this.getNextIntroIndex(), 'C$ = "" : INPUT ">"; C$ : PRINT');
-    const bonkLine = this.addNewLine(this.getNextOutputIndex(), `PRINT "bonk!" : GOTO ${this.inputLine.number}`);
+    const bonkLine = this.addNewLine(this.getNextOutputIndex(), `PRINT "bonk!" : PRINT : GOTO ${this.inputLine.number}`);
 
     this.addNewLine(this.getNextInputIndex(), `IF C$ = "look" GOTO ${startLine.number};`);
 
