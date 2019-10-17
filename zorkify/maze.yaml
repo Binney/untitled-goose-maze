@@ -333,8 +333,10 @@ locations:
     actions:
       - inputs:
           - "drive car"
+          - "drive"
         outputs:
           - "are you kidding?! you're a goose. you don't know how to drive a car."
+          - "however, you know exactly how to wedge the accelerator so the car drives into this nearby lake."
       - inputs:
           - "wedge accelerator"
           - "accelerate"
