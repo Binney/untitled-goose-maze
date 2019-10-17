@@ -101,6 +101,71 @@ locations:
     south: true
     west: false
     east: false
+  - name: "7 o - op-1"
+    x: 2
+    y: 2
+    intros:
+      - "there is an extremely expensive synth on the floor here. presumably somebody paid £600 for it in some sort of online auction, but the sale turned out to be a scam so they discarded it here."
+      - "the only exit is north."
+    actions:
+      - inputs:
+          - "play synth"
+          - "play keyboard"
+          - "keyboard synth"
+          - "keyboard keyboard"
+        outputs:
+          - "silly you! you are a goose, so you cannot play the synth. instead you waddle over the keys repeatedly. they make pleasing electronic sounds."
+          - "you accidentally tread mud into the keyboard so you can’t read the full name, but all you see is the letter o."
+    north: true
+    south: false
+    west: false
+    east: false
+  - name: "8 n - TODO"
+    x: 3
+    y: 2
+    intros:
+      - "TODO"
+    north: true
+    south: true
+    west: false
+    east: true
+  - name: "9 k - TODO"
+    x: 4
+    y: 2
+    intros:
+      - "TODO"
+    north: true
+    south: false
+    west: true
+    east: false
+  - name: "10 i - TODO"
+    x: 5
+    y: 2
+    intros:
+      - "TODO"
+    north: true
+    south: true
+    west: false
+    east: false
+  - name: "11 n - TODO"
+    x: 1
+    y: 3
+    intros:
+      - "TODO"
+    north: true
+    south: false
+    west: false
+    east: true
+  - name: "12 g - grue"
+    x: 2
+    y: 3
+    intros:
+      - "as you enter this square - a corridor running east-west - it suddenly becomes pitch black. you are somewhat worried there might be carnivores that inhabit dark places and feed on unwitting geese."
+      - "fortunately, you are a goose, and you’re pretty sure those grues are more afraid of you than you are of them. you honk extremely loudly and keep moving."
+    north: false
+    south: false
+    west: true
+    east: true
   - name: "13 G - Letterbox"
     x: 3
     y: 3
@@ -112,7 +177,7 @@ locations:
           - "examine mailbox"
         outputs:
           - "you open the mailbox with your bill. there is a letter in the mailbox."
-          - "that letter is: **g**"
+          - "that letter is: g"
     north: true
     south: true
     west: true
@@ -122,9 +187,159 @@ locations:
     y: 3
     intros:
       - "the door to the white house is boarded up, probably following the impeachment enquiry."
-      - "the letter **r** is scratched into the board."
+      - "the letter r is scratched into the board."
       - "there are walls to the north and south."
     north: false
     south: false
     west: true
     east: true
+  - name: "15 e - mosquitos"
+    x: 5
+    y: 3
+    intros:
+      - "there is a thin droning sound here. it is utterly infuriating. it drills into your skull."
+      - "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+      - "suddenly your wings are covered in insect bites and you have no idea how they got there."
+      - "there’s a white house to the west of you, and walls to the south and east."
+    north: true
+    south: false
+    west: true
+    east: false
+  - name: "16 a - insert muse reference here"
+    x: 1
+    y: 4
+    intros:
+      - "you find a man with sparkly clothes, neon glasses and a keytar. he says, 'my name is matt bellamy. would you like me to sing you a song?'"
+      - "there are walls to the north and west."
+    actions:
+      - inputs:
+          - "honk"
+        outputs:
+          - "matt bellamy sings the highest note he possibly can. it is exactly a semitone higher than the g#5 he hits in showbiz. his own glasses shatter under the strain."
+          - "'i thought you only went up to a g#5', you honk."
+          - "'well that’s muse to me', replies matt bellamy."
+    north: false
+    south: true
+    west: false
+    east: true
+  - name: "17 t - 3d"
+    x: 2
+    y: 4
+    intros:
+      - "there’s a peculiar sculpture here, comprising a tall thin vertical trunk with a horizontal bar across the top."
+      - "there are walls to the east, west and south."
+    north: true
+    south: false
+    west: false
+    east: false
+  - name: "18 b - bear"
+    x: 3
+    y: 4
+    intros:
+      - "there is a huge black bear here. you waddle cautiously along the wall, but he’s distracted by a hive high above you."
+      - "a buzzing sound is coming from the hive, but no matter how tall you crane your neck you can’t tell what’s inside."
+      - "there are walls to the east and west."
+    north: true
+    south: true
+    west: false
+    east: false
+  - name: "19 i - something something maths"
+    x: 4
+    y: 4
+    intros:
+      - "19 i - something something maths."
+      - "the square root of minus one is also here. you wave and it nods politely before going back to its work."
+    north: false
+    south: false
+    west: false
+    east: true
+  - name: "20 r - picasso"
+    x: 5
+    y: 4
+    intros:
+      - "you are in a corridor - there are walls to the west and east."
+      - "in the corridor is a moldovan musician, working at an easel. he has a mobile phone. on the wall is a landline phone."
+    actions:
+      - inputs:
+          - "examine easel"
+          - "use easel"
+        outputs:
+          - "the painting on the easel appears to be a collage of geometrical shapes; it’s too high up for you to get a proper look; the moldovan musician shoos you away."
+      - inputs:
+          - "examine phone"
+          - "use phone"
+        outputs:
+          - "you peck away at the landline phone, dialling the moldovan musician’s phone number. his mobile phone rings. he picks up the phone:"
+          - "'alo? alo! sunt eu, picasso! mi-ai dat beep! si sunt voinic!'"
+          - "while he is distracted, you knock over the easel and examine the painting; it’s a portrait, but very reminiscent of the letter r."
+    north: true
+    south: true
+    west: false
+    east: false
+  - name: "21 t - toblerone"
+    x: 1
+    y: 5
+    intros:
+      - "you encounter a lot of triangles, each of which is totally unblerred. you consider blerring all of them, but there really are a lot and you simply don’t have time."
+      - "you really, really want just to bler one."
+    actions:
+      - inputs:
+          - "toblerone"
+        outputs:
+          - "you invite the essence of the toblerone into the very core of your being. you emerge not quite the same goose, but changed, somehow, subtly, irreversibly. you see now that the letter you sought was: t. t for toblerone."
+    north: true
+    south: false
+    west: false
+    east: false
+  - name: "22 h - TODO"
+    x: 2
+    y: 5
+    intros:
+      - "TODO"
+    north: true
+    south: false
+    west: false
+    east: true
+  - name: "23 d - dacia duster"
+    x: 3
+    y: 5
+    intros:
+      - "this square features a brand new royal blue left-hand-drive dacia duster. it even has go-faster stripes and the letter d emblazoned on the bonnet."
+      - "the keys are in the ignition and the engine has been left running."
+    actions:
+      - inputs:
+          - "drive car"
+        outputs:
+          - "are you kidding?! you’re a goose. you don’t know how to drive a car."
+      - inputs:
+          - "wedge accelerator"
+          - "accelerate"
+          - "press accelerator"
+        outputs:
+          - "the dacia duster sinks like a stone. you waddle off proudly, a hard day’s work done."
+    north: true
+    south: false
+    west: true
+    east: true
+  - name: "24 a - atmosfear"
+    x: 4
+    y: 5
+    intros:
+      - "this square contains one (1) spoopy boi, who wears a cowl and smells slightly of rotting cabbage."
+      - "'what’s the first letter of my game?! answer me, maggots!' he wails. you honk at him, but unfortunately the videotape is the same each time so he is unresponsive."
+    north: false
+    south: false
+    west: true
+    east: true
+  - name: "25 y - idk existential dread"
+    x: 5
+    y: 5
+    intros:
+      - "as you enter this square you are overcome with an intense existential angst. what are you doing in this maze?"
+      - "have you been placed here by some sort of avian higher power? are you merely the pawn in some infernal, incomprehensible cosmic game?"
+      - "what? who? where? When?"
+      - "there are walls to the south and east."
+    north: true
+    south: false
+    west: true
+    east: false
