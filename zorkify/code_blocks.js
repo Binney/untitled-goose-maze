@@ -105,7 +105,7 @@ class Location extends CodeBlock {
       });
     }
 
-    this.addNewLine(this.getNextInputIndex(), `PRINT "404 command not found" : GOTO ${this.inputLine.number}`)
+    this.addNewLine(this.getNextInputIndex(), `PRINT "404 command not found" : PRINT : GOTO ${this.inputLine.number}`)
   }
 
   getNextIntroIndex() {
