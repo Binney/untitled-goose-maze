@@ -21,6 +21,86 @@ intro:
     - you instinctively start to follow the left wall, but the graduate recruitment process has recently been revamped, so instead of going forward, left and right your movement options are *north*, *south*, *east* or *west*.
     - you can *look* around you
 locations:
+  - name: "1 h - horse"
+    x: 1
+    y: 1
+    intros:
+      - "you find a horse. it looks roughly four years old. he has a name badge on his horse-collar."
+      - "there are walls to the north, south and west."
+    actions:
+      - inputs:
+          - "examine collar"
+          - "examine badge"
+        outputs:
+          - "the badge has a big H on it. on the reverse side the badge reads “hugo”, followed by an email to contact if the horse is lost."
+          - "before you can call the number, though, he bares his teeth as if to bite, so you back away."
+    north: false
+    south: false
+    west: false
+    east: true
+  - name: "2 a - description of letter"
+    x: 2
+    y: 1
+    intros:
+      - "another alarmingly ample object is at this junction. it’s built from two diagonal struts leaning against each other, with a crossbar connecting them halfway up."
+      - "there is a wall to the north."
+    north: false
+    south: true
+    west: true
+    east: true
+  - name: "3 v - TODO"
+    x: 3
+    y: 1
+    intros:
+      - "TODO"
+    north: false
+    south: true
+    west: true
+    east: false
+  - name: "4 e - TODO"
+    x: 4
+    y: 1
+    intros:
+      - "TODO"
+    north: false
+    south: true
+    west: false
+    east: true
+  - name: "5 a - abul-abbas"
+    x: 5
+    y: 1
+    intros:
+      - "this square contains a huge something, which is pacing to and fro impatiently and waving its trunk about. you can’t tell what it is because it’s been gift-wrapped."
+      - "from one enormous ear hangs a tag: 'to charlie, merry xmas 808! lotsa love, harry al-rashid.'"
+    actions:
+      - inputs:
+          - "unwrap paper"
+          - "tear paper"
+        outputs:
+          - "you tear aside the paper with your beak. it’s an elephant! for you! how considerate. this is a much better present than a commodore 64."
+          - "you notice the elephant wears an ornate saddle embroidered with the letter a."
+    north: false
+    south: true
+    west: true
+    east: false
+  - name: "6 h - haiduc"
+    x: 1
+    y: 2
+    intros:
+      - "you find a haiduc. he is shouting desperately, “hugo! hugo! confound it, hugo!” over and over again."
+      - "his jacket says “h” on the back, which presumably stands for haiduc."
+      - "there are walls to the east, west and north."
+    actions:
+      - inputs:
+          - "unwrap paper"
+          - "tear paper"
+        outputs:
+          - "you tear aside the paper with your beak. it’s an elephant! for you! how considerate. this is a much better present than a commodore 64."
+          - "you notice the elephant wears an ornate saddle embroidered with the letter a."
+    north: false
+    south: true
+    west: false
+    east: false
   - name: "13 G - Letterbox"
     x: 3
     y: 3
