@@ -1,7 +1,7 @@
 function validateLocations(locations) {
   const locationHash = {};
   locations.forEach(location => {
-    locationHash[location.x] |= {};
+    locationHash[location.x] || (locationHash[location.x] = {});
     return locationHash[location.x][location.y] = location;
   });
 

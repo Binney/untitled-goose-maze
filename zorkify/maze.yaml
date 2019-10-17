@@ -227,10 +227,10 @@ locations:
     y: 4
     intros:
       - "there’s a peculiar sculpture here, comprising a tall thin vertical trunk with a horizontal bar across the top."
-      - "there are walls to the east, west and south."
-    north: true
-    south: false
-    west: false
+      - "there are walls to the east and north."
+    north: false
+    south: true
+    west: true
     east: false
   - name: "18 b - bear"
     x: 3
@@ -257,8 +257,8 @@ locations:
     x: 5
     y: 4
     intros:
-      - "you are in a corridor - there are walls to the west and east."
-      - "in the corridor is a moldovan musician, working at an easel. he has a mobile phone. on the wall is a landline phone."
+      - "you are in what looks like an artist's studio - there are walls to the north and east."
+      - "a moldovan musician is working at an easel. he has a mobile phone. there is a landline phone on the wall."
     actions:
       - inputs:
           - "examine easel"
@@ -272,9 +272,9 @@ locations:
           - "you peck away at the landline phone, dialling the moldovan musician’s phone number. his mobile phone rings. he picks up the phone:"
           - "'alo? alo! sunt eu, picasso! mi-ai dat beep! si sunt voinic!'"
           - "while he is distracted, you knock over the easel and examine the painting; it’s a portrait, but very reminiscent of the letter r."
-    north: true
+    north: false
     south: true
-    west: false
+    west: true
     east: false
   - name: "21 t - toblerone"
     x: 1
