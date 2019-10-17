@@ -3,7 +3,7 @@ class CodeBlock {
     this.lines = [];
   }
 
-  renderLines() {
+  getLines() {
     return this.lines.sort((first, second) => first.number - second.number).map(line => line.render());
   }
 
@@ -27,14 +27,15 @@ class Intro extends CodeBlock {
   }
 
   generateLines() {
-    const startLine = this.addNewLine(this.getNextIndex(), `REM INTRO`);
+    const startLine = this.addNewLine(this.getNextIndex(), 'REM INTRO');
     this.introBlocks.forEach(introBlock => this.generateIntroBlockCode(introBlock));
     this.addNewLine(this.getNextIndex(), `GOTO ${Location.buildPrefix(this.startLocationX, this.startLocationY)}00`);
   }
 
   generateIntroBlockCode(introBlock) {
     introBlock.split(/\r?\n/).forEach(intro => this.addNewLine(this.getNextIndex(), `PRINT "${intro.toLowerCase()}"`));
-    this.addNewLine(this.getNextIndex(), 'PRINT : C$ = "" : INPUT ">"; C$ : PRINT');
+    this.addNewLine(this.getNextIndex(), 'PRINT');
+    this.addNewLine(this.getNextIndex(), 'C$ = "" : INPUT ">"; C$ : PRINT');
   }
 
   getNextIndex() {
@@ -66,8 +67,8 @@ class Location extends CodeBlock {
 
   generateLines() {
     const startLine = this.addNewLine(this.getNextIntroIndex(), `REM ${this.name}`);
-    this.intros.forEach(intro => this.addNewLine(this.getNextIntroIndex(), `PRINT "${intro.toLowerCase()}"`));
-    this.inputLine = this.addNewLine(this.getNextIntroIndex(), 'PRINT : C$ = "" : INPUT ">"; C$ : PRINT');
+    this.intros.forEach(intro => this.addNewLine(this.getNextIntroIndex(), `PRINT "${intro.toLowerCase()}" : PRINT`));
+    this.inputLine = this.addNewLine(this.getNextIntroIndex(), 'C$ = "" : INPUT ">"; C$ : PRINT');
     const bonkLine = this.addNewLine(this.getNextOutputIndex(), `PRINT "bonk!" : GOTO ${this.inputLine.number}`);
 
     this.addNewLine(this.getNextInputIndex(), `IF C$ = "look" GOTO ${startLine.number};`);
@@ -98,7 +99,8 @@ class Location extends CodeBlock {
 
     if (this.actions) {
       this.actions.forEach(action => {
-        const outputLines = action.outputs.map(output => this.addNewLine(this.getNextOutputIndex(), `PRINT "${output.toString()}" : GOTO ${this.inputLine.number}`));
+        const outputLines = action.outputs.map(output => this.addNewLine(this.getNextOutputIndex(), `PRINT "${output.toString()}" : PRINT`));
+        this.addNewLine(this.getNextOutputIndex(), `GOTO ${this.inputLine.number}`);
         action.inputs.forEach(input => this.addNewLine(this.getNextInputIndex(), `IF C$ = "${input}" GOTO ${outputLines[0].number};`));
       });
     }

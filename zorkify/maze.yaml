@@ -32,7 +32,7 @@ locations:
           - "examine collar"
           - "examine badge"
         outputs:
-          - "the badge has a big H on it. on the reverse side the badge reads “hugo”, followed by an email to contact if the horse is lost."
+          - "the badge has a big H on it. on the reverse side the badge reads 'hugo', followed by an email to contact if the horse is lost."
           - "before you can call the number, though, he bares his teeth as if to bite, so you back away."
     north: false
     south: false
@@ -42,7 +42,7 @@ locations:
     x: 2
     y: 1
     intros:
-      - "another alarmingly ample object is at this junction. it’s built from two diagonal struts leaning against each other, with a crossbar connecting them halfway up."
+      - "another alarmingly ample object is at this junction. it's built from two diagonal struts leaning against each other, with a crossbar connecting them halfway up."
       - "there is a wall to the north."
     north: false
     south: true
@@ -70,14 +70,14 @@ locations:
     x: 5
     y: 1
     intros:
-      - "this square contains a huge something, which is pacing to and fro impatiently and waving its trunk about. you can’t tell what it is because it’s been gift-wrapped."
+      - "this square contains a huge something, which is pacing to and fro impatiently and waving its trunk about. you can't tell what it is because it's been gift-wrapped."
       - "from one enormous ear hangs a tag: 'to charlie, merry xmas 808! lotsa love, harry al-rashid.'"
     actions:
       - inputs:
           - "unwrap paper"
           - "tear paper"
         outputs:
-          - "you tear aside the paper with your beak. it’s an elephant! for you! how considerate. this is a much better present than a commodore 64."
+          - "you tear aside the paper with your beak. it's an elephant! for you! how considerate. this is a much better present than a commodore 64."
           - "you notice the elephant wears an ornate saddle embroidered with the letter a."
     north: false
     south: true
@@ -87,15 +87,15 @@ locations:
     x: 1
     y: 2
     intros:
-      - "you find a haiduc. he is shouting desperately, “hugo! hugo! confound it, hugo!” over and over again."
-      - "his jacket says “h” on the back, which presumably stands for haiduc."
+      - "you find a haiduc. he is shouting desperately, 'hugo! hugo! confound it, hugo!' over and over again."
+      - "his jacket says 'h' on the back, which presumably stands for haiduc."
       - "there are walls to the east, west and north."
     actions:
       - inputs:
           - "unwrap paper"
           - "tear paper"
         outputs:
-          - "you tear aside the paper with your beak. it’s an elephant! for you! how considerate. this is a much better present than a commodore 64."
+          - "you tear aside the paper with your beak. it's an elephant! for you! how considerate. this is a much better present than a commodore 64."
           - "you notice the elephant wears an ornate saddle embroidered with the letter a."
     north: false
     south: true
@@ -115,7 +115,7 @@ locations:
           - "keyboard keyboard"
         outputs:
           - "silly you! you are a goose, so you cannot play the synth. instead you waddle over the keys repeatedly. they make pleasing electronic sounds."
-          - "you accidentally tread mud into the keyboard so you can’t read the full name, but all you see is the letter o."
+          - "you accidentally tread mud into the keyboard so you can't read the full name, but all you see is the letter o."
     north: true
     south: false
     west: false
@@ -161,7 +161,7 @@ locations:
     y: 3
     intros:
       - "as you enter this square - a corridor running east-west - it suddenly becomes pitch black. you are somewhat worried there might be carnivores that inhabit dark places and feed on unwitting geese."
-      - "fortunately, you are a goose, and you’re pretty sure those grues are more afraid of you than you are of them. you honk extremely loudly and keep moving."
+      - "fortunately, you are a goose, and you're pretty sure those grues are more afraid of you than you are of them. you honk extremely loudly and keep moving."
     north: false
     south: false
     west: true
@@ -200,7 +200,7 @@ locations:
       - "there is a thin droning sound here. it is utterly infuriating. it drills into your skull."
       - "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
       - "suddenly your wings are covered in insect bites and you have no idea how they got there."
-      - "there’s a white house to the west of you, and walls to the south and east."
+      - "there's a white house to the west of you, and walls to the south and east."
     north: true
     south: false
     west: true
@@ -217,7 +217,7 @@ locations:
         outputs:
           - "matt bellamy sings the highest note he possibly can. it is exactly a semitone higher than the g#5 he hits in showbiz. his own glasses shatter under the strain."
           - "'i thought you only went up to a g#5', you honk."
-          - "'well that’s muse to me', replies matt bellamy."
+          - "'well that's muse to me', replies matt bellamy."
     north: false
     south: true
     west: false
@@ -226,7 +226,7 @@ locations:
     x: 2
     y: 4
     intros:
-      - "there’s a peculiar sculpture here, comprising a tall thin vertical trunk with a horizontal bar across the top."
+      - "there's a peculiar sculpture here, comprising a tall thin vertical trunk with a horizontal bar across the top."
       - "there are walls to the east and north."
     north: false
     south: true
@@ -236,8 +236,8 @@ locations:
     x: 3
     y: 4
     intros:
-      - "there is a huge black bear here. you waddle cautiously along the wall, but he’s distracted by a hive high above you."
-      - "a buzzing sound is coming from the hive, but no matter how tall you crane your neck you can’t tell what’s inside."
+      - "there is a huge black bear here. you waddle cautiously along the wall, but he's distracted by a hive high above you."
+      - "a buzzing sound is coming from the hive, but no matter how tall you crane your neck you can't tell what's inside."
       - "there are walls to the east and west."
     north: true
     south: true
@@ -264,14 +264,14 @@ locations:
           - "examine easel"
           - "use easel"
         outputs:
-          - "the painting on the easel appears to be a collage of geometrical shapes; it’s too high up for you to get a proper look; the moldovan musician shoos you away."
+          - "the painting on the easel appears to be a collage of geometrical shapes; it's too high up for you to get a proper look; the moldovan musician shoos you away."
       - inputs:
           - "examine phone"
           - "use phone"
         outputs:
-          - "you peck away at the landline phone, dialling the moldovan musician’s phone number. his mobile phone rings. he picks up the phone:"
+          - "you peck away at the landline phone, dialling the moldovan musician's phone number. his mobile phone rings. he picks up the phone:"
           - "'alo? alo! sunt eu, picasso! mi-ai dat beep! si sunt voinic!'"
-          - "while he is distracted, you knock over the easel and examine the painting; it’s a portrait, but very reminiscent of the letter r."
+          - "while he is distracted, you knock over the easel and examine the painting; it's a portrait, but very reminiscent of the letter r."
     north: false
     south: true
     west: true
@@ -280,7 +280,7 @@ locations:
     x: 1
     y: 5
     intros:
-      - "you encounter a lot of triangles, each of which is totally unblerred. you consider blerring all of them, but there really are a lot and you simply don’t have time."
+      - "you encounter a lot of triangles, each of which is totally unblerred. you consider blerring all of them, but there really are a lot and you simply don't have time."
       - "you really, really want just to bler one."
     actions:
       - inputs:
@@ -310,13 +310,13 @@ locations:
       - inputs:
           - "drive car"
         outputs:
-          - "are you kidding?! you’re a goose. you don’t know how to drive a car."
+          - "are you kidding?! you're a goose. you don't know how to drive a car."
       - inputs:
           - "wedge accelerator"
           - "accelerate"
           - "press accelerator"
         outputs:
-          - "the dacia duster sinks like a stone. you waddle off proudly, a hard day’s work done."
+          - "the dacia duster sinks like a stone. you waddle off proudly, a hard day's work done."
     north: true
     south: false
     west: true
@@ -326,7 +326,7 @@ locations:
     y: 5
     intros:
       - "this square contains one (1) spoopy boi, who wears a cowl and smells slightly of rotting cabbage."
-      - "'what’s the first letter of my game?! answer me, maggots!' he wails. you honk at him, but unfortunately the videotape is the same each time so he is unresponsive."
+      - "'what's the first letter of my game?! answer me, maggots!' he wails. you honk at him, but unfortunately the videotape is the same each time so he is unresponsive."
     north: false
     south: false
     west: true
