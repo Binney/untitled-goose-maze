@@ -26,6 +26,10 @@ global:
         - "honk"
       outputs:
         - "honk... onk... onk... nk..."
+    - inputs:
+        - "f"
+      outputs:
+        - "you pay respects"
 locations:
   - name: "1 h - horse"
     x: 1

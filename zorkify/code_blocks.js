@@ -99,9 +99,9 @@ class Location extends CodeBlock {
 
     if (this.actions) {
       this.actions.forEach(action => {
-        const outputLines = action.outputs.map(output => this.addNewLine(this.getNextOutputIndex(), `PRINT "${output.toString()}" : PRINT`));
+        const outputLines = action.outputs.map(output => this.addNewLine(this.getNextOutputIndex(), `PRINT "${output.toLowerCase()}" : PRINT`));
         this.addNewLine(this.getNextOutputIndex(), `GOTO ${this.inputLine.number}`);
-        action.inputs.forEach(input => this.addNewLine(this.getNextInputIndex(), `IF C$ = "${input}" GOTO ${outputLines[0].number};`));
+        action.inputs.forEach(input => this.addNewLine(this.getNextInputIndex(), `IF C$ = "${input.toLowerCase()}" GOTO ${outputLines[0].number};`));
       });
     }
 
