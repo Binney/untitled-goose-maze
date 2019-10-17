@@ -64,6 +64,7 @@ locations:
     intros:
       - "As you turn the corner, you find four flamboyantly dressed dutch men and women. They're all gathered round a garishly coloured Volkswagen Type 2 minibus."
       - "'We can't get this damn thing to start! I think it must be out of tune - if only we had the right sound to kickstart it!'"
+      - "there are walls to the north and east."
     actions:
       - inputs:
           - "honk"
@@ -75,7 +76,7 @@ locations:
           - "boom boom boom boom"
         outputs:
           - "'Honk honk', the bus responds - and the wheels get put in motion, as the speakers start blasting out the tune of the Vengabus."
-          - "The Vengaboys all flash you the peace sign as the Volkswagen drives away."
+          - "The Vengaboys all flash you the v sign as the Volkswagen drives away."
 
     north: false
     south: true
@@ -96,10 +97,12 @@ locations:
     intros:
       - "this square contains a huge something, which is pacing to and fro impatiently and waving its trunk about. you can't tell what it is because it's been gift-wrapped."
       - "from one enormous ear hangs a tag: 'to charlie, merry xmas 808! lotsa love, harry al-rashid.'"
+      - "there are walls to the north and east."
     actions:
       - inputs:
           - "unwrap paper"
           - "tear paper"
+          - "unwrap"
         outputs:
           - "you tear aside the paper with your beak. it's an elephant! for you! how considerate. this is a much better present than a commodore 64."
           - "you notice the elephant wears an ornate saddle embroidered with the letter a."
@@ -157,11 +160,18 @@ locations:
     x: 4
     y: 2
     intros:
-      - "TODO"
+      - "this square is pitch black. you are somewhat worried there might be carnivores that inhabit dark places and feed on unwitting geese."
+      - "there are walls to the south and east."
     north: true
     south: false
     west: true
     east: false
+    actions:
+      - inputs:
+        - "honk"
+        outputs:
+          - "fortunately, you are a goose, and you're pretty sure those grues are more afraid of you than you are of them. you honk extremely loudly."
+          - "the chitter of terrified creatures recedes into the darkness. it sounds like they are saying 'kkkkkkkkkkkkkkk'."
   - name: "10 i - TODO"
     x: 5
     y: 2
@@ -180,12 +190,25 @@ locations:
     south: false
     west: false
     east: true
-  - name: "12 g - grue"
+  - name: "12 g - jewelled egg"
     x: 2
     y: 3
     intros:
-      - "as you enter this square - a corridor running east-west - it suddenly becomes pitch black. you are somewhat worried there might be carnivores that inhabit dark places and feed on unwitting geese."
-      - "fortunately, you are a goose, and you're pretty sure those grues are more afraid of you than you are of them. you honk extremely loudly and keep moving."
+      - "you stumble into a forest and quickly become very lost. honestly, how long have you been playing this game? aren't geese supposed to have a honing instinct? or is that pigeons?"
+      - "anyway"
+      - "you wander around aimlessly until you find a clearing. in the middle of the clearing is a pile of leaves."
+      - "the foliage to the north and south is impenetrable."
+    actions:
+      - inputs:
+        - "disturb leaves"
+        - "examine leaves"
+        - "search leaves"
+        - "disturb pile"
+        - "examine pile"
+        - "search pile"
+        outputs:
+          - "you fish around in the pile of leaves, and find... an egg encrusted with jewels!"
+          - "hey, wait, this is actually just the letter g. oh well. better keep looking for that treasure."
     north: false
     south: false
     west: true
@@ -315,11 +338,28 @@ locations:
     south: false
     west: false
     east: false
-  - name: "22 h - TODO"
+  - name: "22 h - hatoful boyfriend"
     x: 2
     y: 5
     intros:
-      - "TODO"
+      - "There is a pigeon in this square. He is extremely attractive, with glossy white feathers and a twinkle in his eye."
+      - "'Anata ga ten kara ochita toki, sore wa itamimashita ka?' he asks."
+      - "Your japanese is pretty rusty, but you think he's coming on to you."
+      - "there are walls to the south and west."
+    actions:
+      - inputs:
+          - "honk"
+          - "seduce"
+          - "seduce pigeon"
+          - "flirt"
+          - "flirt pigeon"
+          - "flirt with pigeon"
+        outputs:
+          - "you honk flirtatiously."
+          - "'anata no hane ga totemo kitanainode, tobenaikaradesu ka? Hē. Kyūban.'"
+          - "The pigeon wanders off. you're pretty sure you have been insulted but don't know exactly how."
+          - "Anyway, he dropped this slip of paper from the tanabata festival, so you steal it."
+          - "the wish is for: h"
     north: true
     south: false
     west: false
