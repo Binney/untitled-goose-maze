@@ -5,7 +5,7 @@ fs   = require('fs');
 
 const mazeDoc = yaml.safeLoad(fs.readFileSync('./maze.yaml', 'utf8'));
 
-const locations = mazeDoc.locations.map(locationDoc => new Location(locationDoc));
+const locations = mazeDoc.locations.map(locationDoc => new Location(locationDoc, mazeDoc.global));
 
 console.log(validateMaze(locations));
 

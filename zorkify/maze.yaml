@@ -20,6 +20,12 @@ intro:
     - you are a goose in a maze. the word softwire is printed on your stomach and this makes you unreasonably angry.
     - you instinctively start to follow the left wall, but the graduate recruitment process has recently been revamped, so instead of going forward, left and right your movement options are *north*, *south*, *east* or *west*.
     - you can *look* around you
+global:
+  actions:
+    - inputs:
+        - "honk"
+      outputs:
+        - "honk... onk... onk... nk..."
 locations:
   - name: "1 h - horse"
     x: 1

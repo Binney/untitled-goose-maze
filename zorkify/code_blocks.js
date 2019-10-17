@@ -46,14 +46,14 @@ class Intro extends CodeBlock {
 }
 
 class Location extends CodeBlock {
-  constructor(doc) {
+  constructor(doc, globalDoc) {
     super();
     this.x = doc.x;
     this.y = doc.y;
     this.prefix = Location.buildPrefix(this.x, this.y);
     this.name = doc.name;
     this.intros = doc.intros;
-    this.actions = doc.actions;
+    this.actions = (doc.actions || []).concat(globalDoc.actions);
     this.nextIntroIndex = 0;
     this.nextInputIndex = 10;
     this.nextOutputIndex = 50;
