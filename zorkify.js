@@ -3,7 +3,7 @@ const validateMaze = require("./validator");
 yaml = require('js-yaml');
 fs   = require('fs');
 
-const mazeDoc = yaml.safeLoad(fs.readFileSync('./maze.yaml', 'utf8'));
+const mazeDoc = yaml.safeLoad(fs.readFileSync('./honk.yaml', 'utf8'));
 
 const locations = mazeDoc.locations.map(locationDoc => new Location(locationDoc, mazeDoc.global));
 
@@ -17,6 +17,6 @@ let code = codeBlocks.reduce((acc, codeBlock) => {
   return acc.concat(codeBlock.getLines().concat(""))
 }, []).join("\n");
 
-fs.writeFileSync('./game.bas', code, 'utf8');
+fs.writeFileSync('./honk.bas', code, 'utf8');
 
-console.log('Wrote ./game.bas');
+console.log('Wrote ./honk.bas');
