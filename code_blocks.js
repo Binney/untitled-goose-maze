@@ -33,7 +33,7 @@ class Intro extends CodeBlock {
   }
 
   generateIntroBlockCode(introBlock) {
-    introBlock.split(/\r?\n/).forEach(intro => this.addNewLine(this.getNextIndex(), `PRINT "${intro.toLowerCase()}"`));
+    introBlock.split(/\r?\n/).forEach(intro => this.addNewLine(this.getNextIndex(), `PRINT "${processText(intro)}"`));
     this.addNewLine(this.getNextIndex(), 'PRINT');
     this.addNewLine(this.getNextIndex(), 'INPUT ">"; C$ : PRINT');
   }
@@ -43,6 +43,21 @@ class Intro extends CodeBlock {
     this.nextIndex++;
     return index;
   }
+}
+
+function processText(text) {
+  let processedText = text.toLowerCase();
+  processedText = replaceAll(processedText, "[[", "{cyan}");
+  processedText = replaceAll(processedText, "]]", "{light blue}");
+  return processedText;
+}
+
+function replaceAll(string, searchValue, replaceValue) {
+  let processedString = string;
+  while (processedString.indexOf(searchValue) > 0) {
+    processedString = processedString.replace(searchValue, replaceValue);
+  }
+  return processedString;
 }
 
 class Location extends CodeBlock {
@@ -67,7 +82,7 @@ class Location extends CodeBlock {
 
   generateLines() {
     const startLine = this.addNewLine(this.getNextIntroIndex(), `REM ${this.name}`);
-    this.intros.forEach(intro => this.addNewLine(this.getNextIntroIndex(), `PRINT "${intro.toLowerCase()}" : PRINT`));
+    this.intros.forEach(intro => this.addNewLine(this.getNextIntroIndex(), `PRINT "${processText(intro)}" : PRINT`));
     this.inputLine = this.addNewLine(this.getNextIntroIndex(), 'C$ = "" : INPUT ">"; C$ : PRINT');
     const bonkLine = this.addNewLine(this.getNextOutputIndex(), `PRINT "bonk!" : PRINT : GOTO ${this.inputLine.number}`);
 
@@ -99,7 +114,7 @@ class Location extends CodeBlock {
 
     if (this.actions) {
       this.actions.forEach(action => {
-        const outputLines = action.outputs.map(output => this.addNewLine(this.getNextOutputIndex(), `PRINT "${output.toLowerCase()}" : PRINT`));
+        const outputLines = action.outputs.map(output => this.addNewLine(this.getNextOutputIndex(), `PRINT "${processText(output)}" : PRINT`));
         this.addNewLine(this.getNextOutputIndex(), `GOTO ${this.inputLine.number}`);
         action.inputs.forEach(input => this.addNewLine(this.getNextInputIndex(), `IF C$ = "${input.toLowerCase()}" GOTO ${outputLines[0].number};`));
       });
