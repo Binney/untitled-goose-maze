@@ -35,7 +35,7 @@ locations:
     x: 1
     y: 1
     intros:
-      - "you find a horse. it looks roughly four years old. he has a name badge on his horse-collar."
+      - "you find a horse. he looks roughly four years old. he has a name badge on his horse-collar."
       - "there are walls to the north, south and west."
     actions:
       - inputs:
