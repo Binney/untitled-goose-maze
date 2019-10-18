@@ -220,11 +220,26 @@ locations:
     south: true
     west: false
     east: false
-  - name: "11 n - TODO"
+  - name: "11 n - panto"
     x: 1
     y: 3
     intros:
-      - "TODO"
+      - "As you enter this next square, you remember you are tremendously hungry."
+      - "On any normal day you would go to the pond and bully the ducks for their lunch money, but all there seems to be here is a big table covered in fancy dress costumes and a heavy sheaf of paper."
+      - "Really tasty looking paper."
+      - "There are walls to the south and west, and you can hear someone yelling 'where the bloody hell is the script?'"
+    actions:
+      - inputs:
+        - "eat"
+        - "eat paper"
+        - "eat script"
+        - "eat pile of paper"
+        - "consume paper"
+        outputs:
+          - "You make quick work of the pile of papers, which could use a little seasoning. Just as you're about to polish off the final page a harassed-looking software developer hurries around a corner."
+          - "They stop in shock to see you munch one of the letters out of the final page:"
+          - "'softpa t 2019'"
+          - "You are chased out of the square by a mob of angry devs faster than you can say 'lincoln stone'."
     north: true
     south: false
     west: false
