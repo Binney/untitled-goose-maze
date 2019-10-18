@@ -126,6 +126,7 @@ locations:
           - "tear paper"
           - "unwrap"
           - "rip paper"
+          - "unwrap present"
         outputs:
           - "you tear aside the paper with your beak. it's an elephant! for you! how considerate. this is a much better present than a commodore 64."
           - "you notice the elephant wears an ornate saddle embroidered with the letter a."
@@ -175,13 +176,26 @@ locations:
     y: 2
     intros:
       - "As you wander the labyrinth you find what appears to be the corpse of an adventurer lying against the eastern wall. He's not in particularly good shape - his eyeballs are long past their best-before date - but his possessions absolutely are."
-      - "strung over his back is a satchel full of letters, a gleaming purple guitar, and the largest axe you have ever seen. It's huge. It's even bigger than wizzair's checked-in baggage allowance. It's also very sharp."
-      - "You might be a goose, but you know how rpgs work, and that axe probably gives +5 two-handed damage plus bleeding or something. It'd be a crime to leave it here to rust."
     north: true
     south: true
     west: false
     east: true
     actions:
+      - inputs:
+        - "search corpse"
+        - "search adventurer"
+        - "search body"
+        - "examine corpse"
+        - "examine adventurer"
+        - "examine body"
+        - "loot corpse"
+        - "loot adventurer"
+        - "loot body"
+        - "search belongings"
+        - "search possessions"
+        outputs:
+        - "strung over his back is a satchel full of letters, a gleaming purple guitar, and the largest axe you have ever seen. It's huge. It's even bigger than wizzair's checked-in baggage allowance. It's also very sharp."
+        - "You might be a goose, but you know how rpgs work, and that axe probably gives +5 two-handed damage plus bleeding or something. It'd be a crime to leave it here to rust."          
       - inputs:
         - "take axe"
         - "steal axe"
@@ -314,6 +328,16 @@ locations:
       - "there are walls to the north and west."
     actions:
       - inputs:
+        - "reply"
+        - "reply to matt"
+        - "reply to matt bellamy"
+        - "yes"
+        - "no"
+        - "answer"
+        - "sing"
+        outputs:
+          - "silly you! you are a goose and cannot speak the human tongue. there is only one way you know how to communicate..."
+      - inputs:
           - "honk"
         outputs:
           - "matt bellamy sings the highest note he possibly can. it is exactly a semitone higher than the g#5 he hits in showbiz. his own glasses shatter under the strain."
@@ -348,7 +372,6 @@ locations:
     x: 4
     y: 4
     intros:
-      - "19 i - something something maths."
       - "the square root of minus one is also here. you wave and it nods politely before going back to its work."
     north: false
     south: false
