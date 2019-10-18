@@ -152,9 +152,9 @@ locations:
           - "knock over glass"
         outputs:
           - "You knock over the glass with your bill; it bangs on the table. The haiduc stands up at once:"
-          - "'Of course, Hanthony - how could you have been so foolish? I must shout to my horse!'"
+          - "'Of course, Hanton - how could you have been so foolish? I must shout to my horse!'"
           - "'Hugo, Hugo, how am I to find you?'"
-          - "A neighing sounds off from behind a wall. Hanthony the haiduc runs off."
+          - "A neighing sounds off from behind a wall. Hanton the haiduc runs off."
           - "You notice he has forgot his handkerchief. It is embroidered with the letter 'H'."
     north: false
     south: true
