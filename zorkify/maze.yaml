@@ -82,11 +82,32 @@ locations:
     south: true
     west: true
     east: false
-  - name: "4 e - TODO"
+  - name: "4 e - cassette tape"
     x: 4
     y: 1
     intros:
-      - "TODO"
+      - "As you enter this room you spot a cassette tape on the floor. The handwritten label reads: 'untitled goose maze'."
+      - "There is a cassette player, and walls to the west and north."
+    actions:
+      - inputs:
+          - "examine cassette"
+          - "use cassette"
+          - "examine cassette tape"
+          - "use cassette tape"
+          - "examine tape"
+          - "use tape"
+          - "examine cassette player"
+          - "use cassette player"
+          - "examine player"
+          - "use player"
+          - "use cassette with player"
+          - "use cassette tape with player"
+          - "use tape with player"
+        outputs:
+          - "You pick up the cassette with your bill, pluck it into the cassette player, and hit 'play'."
+          - "The player emits a terrible screeching sound:"
+          - "'eeeeeeeeeeeeeeeeeee-e-e-e-e-e-e-e-eeeeeeeeeeeeeeeeeeeee-e-e-e-e-e-eeeeeeeeeeeeeeeee'"
+          - "Why would anyone record such a dreadful tune? Even ecstasy couldn't help you enjoy that. You wish you were listening to chill-e saviour instead."
     north: false
     south: true
     west: false
