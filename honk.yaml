@@ -193,11 +193,16 @@ locations:
         outputs:
           - "fortunately, you are a goose, and you're pretty sure those grues are more afraid of you than you are of them. you honk extremely loudly."
           - "the chitter of terrified creatures recedes into the darkness. it sounds like they are saying 'kkkkkkkkkkkkkkk'."
-  - name: "10 i - TODO"
+  - name: "10 i - dan, pete and phil"
     x: 5
     y: 2
     intros:
-      - "TODO"
+      - "You enter what appears to be an office cafeteria. A sign on the wall to the west reads 'data connections'. There is another wall to the east."
+      - "Three thick-haired young men are crowded around a table, talking in hushed voices:"
+      - "'So what could we call it then? O - Softwore?'"
+      - "'Sounds like a used clothing company. E - Softwere?'"
+      - "'Nah, makes us sound like have-beens. U - Softwure?'"
+      - "'I - I think there must be a right answer, but it's eluding me right now.'"
     north: true
     south: true
     west: false
