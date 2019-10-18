@@ -41,6 +41,7 @@ locations:
       - inputs:
           - "examine collar"
           - "examine badge"
+          - "examine name badge"
         outputs:
           - "the badge has a big H on it. on the reverse side the badge reads 'hugo', followed by an email to contact if the horse is lost."
           - "before you can call the number, though, he bares his teeth as if to bite, so you back away."
@@ -124,6 +125,7 @@ locations:
           - "unwrap paper"
           - "tear paper"
           - "unwrap"
+          - "rip paper"
         outputs:
           - "you tear aside the paper with your beak. it's an elephant! for you! how considerate. this is a much better present than a commodore 64."
           - "you notice the elephant wears an ornate saddle embroidered with the letter a."
@@ -168,16 +170,27 @@ locations:
     south: false
     west: false
     east: false
-  - name: "8 n - TODO"
+  - name: "8 n - axe"
     x: 3
     y: 2
     intros:
-      - "TODO"
+      - "As you wander the labyrinth you find what appears to be the corpse of an adventurer lying against the eastern wall. He's not in particularly good shape - his eyeballs are long past their best-before date - but his possessions absolutely are."
+      - "strung over his back is a satchel full of letters, a gleaming purple guitar, and the largest axe you have ever seen. It's huge. It's even bigger than wizzair's checked-in baggage allowance. It's also very sharp."
+      - "You might be a goose, but you know how rpgs work, and that axe probably gives +5 two-handed damage plus bleeding or something. It'd be a crime to leave it here to rust."
     north: true
     south: true
     west: false
     east: true
-  - name: "9 k - TODO"
+    actions:
+      - inputs:
+        - "take axe"
+        - "steal axe"
+        - "equip axe"
+        - "axe"
+        outputs:
+          - "You pull and pull at the axe's handle, but it's simply too heavy - you are unable to shift it. The guitar proves even heavier."
+          - "You make do instead by picking one of his letters out at random. It turns out to be an N."
+  - name: "9 k - grue"
     x: 4
     y: 2
     intros:
