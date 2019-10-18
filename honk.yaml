@@ -138,16 +138,24 @@ locations:
     x: 1
     y: 2
     intros:
-      - "you find a haiduc. he is shouting desperately, 'hugo! hugo! confound it, hugo!' over and over again."
-      - "his jacket says 'h' on the back, which presumably stands for haiduc."
-      - "there are walls to the east, west and north."
+      - "You enter an alcove with walls to the east, west and north."
+      - "Sitting at a table, there is a man who appears to be some kind of highwayman or outlaw - or perhaps a freedom fighter, depending on whom you ask."
+      - "'Sunt eu un... haiduc? How can I be a haiduc without my trusted steed?', he laments. 'But my horse has run off - how am I to find him?'"
+      - "He seems to be drowning his sorrows by drinking from a glass."
     actions:
       - inputs:
-          - "unwrap paper"
-          - "tear paper"
+          - "use glass"
+          - "examine glass"
+          - "bang glass"
+          - "bang your glass"
+          - "bang your glass on the table"
+          - "knock over glass"
         outputs:
-          - "you tear aside the paper with your beak. it's an elephant! for you! how considerate. this is a much better present than a commodore 64."
-          - "you notice the elephant wears an ornate saddle embroidered with the letter a."
+          - "You knock over the glass with your bill; it bangs on the table. The haiduc stands up at once:"
+          - "'Of course, Hanton - how could you have been so foolish? I must shout to my horse!'"
+          - "'Hugo, Hugo, how am I to find you?'"
+          - "A neighing sounds off from behind a wall. Hanton the haiduc runs off."
+          - "You notice he has forgot his handkerchief. It is embroidered with the letter 'H'."
     north: false
     south: true
     west: false
@@ -195,7 +203,7 @@ locations:
         - "search possessions"
         outputs:
         - "strung over his back is a satchel full of letters, a gleaming purple guitar, and the largest axe you have ever seen. It's huge. It's even bigger than wizzair's checked-in baggage allowance. It's also very sharp."
-        - "You might be a goose, but you know how rpgs work, and that axe probably gives +5 two-handed damage plus bleeding or something. It'd be a crime to leave it here to rust."          
+        - "You might be a goose, but you know how rpgs work, and that axe probably gives +5 two-handed damage plus bleeding or something. It'd be a crime to leave it here to rust."
       - inputs:
         - "take axe"
         - "steal axe"
