@@ -2,6 +2,19 @@ intro:
   startLocation:
     x: 3
     y: 3
+  splashTitle:
+    |
+    . WQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQW
+    .            RRRR
+    .  GG   GG NNEEEEMM GGM  GG GG NN GG
+    .  GGRRRGG N      M GGMM GG GGNN  GG
+    .  GGEEEGG G      G GG MMGG GGN   GG
+    .  GG   GG M  RR  N GG  MMG GGMM
+    .  GG   GG MMRRRRNN GG   GG GG MM
+    .                                 UI
+    .  WQWQWQWQWQWQWQWQWQWQWQWQWQWQWQ JK
+    .
+    .            press enter
   introBlocks:
     - |
       ----------------------------

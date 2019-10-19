@@ -19,6 +19,7 @@ class Intro extends CodeBlock {
     super();
     this.prefix = "";
     this.introBlocks = doc.introBlocks;
+    this.splashTitle = doc.splashTitle;
     this.nextIndex = 10;
     this.startLocationX = doc.startLocation.x;
     this.startLocationY = doc.startLocation.y;
@@ -28,8 +29,15 @@ class Intro extends CodeBlock {
 
   generateLines() {
     const startLine = this.addNewLine(this.getNextIndex(), 'REM INTRO');
+    this.generateSplashTitleCode(this.splashTitle);
     this.introBlocks.forEach(introBlock => this.generateIntroBlockCode(introBlock));
     this.addNewLine(this.getNextIndex(), `GOTO ${Location.buildPrefix(this.startLocationX, this.startLocationY)}00`);
+  }
+
+  generateSplashTitleCode(splashTitle) {
+    splashTitle.split(/\r?\n/).forEach(intro => this.addNewLine(this.getNextIndex(), `PRINT "${intro}"`));
+    this.addNewLine(this.getNextIndex(), 'PRINT');
+    this.addNewLine(this.getNextIndex(), 'INPUT ">"; C$ : PRINT');
   }
 
   generateIntroBlockCode(introBlock) {
