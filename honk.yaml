@@ -65,7 +65,7 @@ locations:
     y: 1
     intros:
       - "As you turn the corner, you find four flamboyantly dressed dutch men and women. They're all gathered round a garishly coloured Volkswagen Type 2 minibus."
-      - "'We can't get this damn thing to start! I think it must be out of tune - if only we had the right sound to kickstart it!'"
+      - "'We gotta put some wheels in motion, but this thing's stalled! I think it must be out of tune; we need the right sound to kickstart it!'"
       - "there are walls to the north and east."
     actions:
       - inputs:
@@ -73,13 +73,15 @@ locations:
           - "honk honk"
           - "toot"
           - "toot toot"
+        outputs:
+          - "'Honk honk', the bus responds - and its wheels of steel start turning, while the speakers blast out the tune of the Vengabus."
+          - "The Vengaboys all flash you the v sign as the Volkswagen drives away."
+      - inputs:
           - "boom"
           - "boom boom"
           - "boom boom boom boom"
         outputs:
-          - "'Honk honk', the bus responds - and the wheels get put in motion, as the speakers start blasting out the tune of the Vengabus."
-          - "The Vengaboys all flash you the v sign as the Volkswagen drives away."
-
+          - "You toss a ping-pong ball into a plastic cup; the Vengaboys all drink. But maybe there's something else you could do to help?"
     north: false
     south: true
     west: true
