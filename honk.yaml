@@ -74,14 +74,14 @@ locations:
           - "toot"
           - "toot toot"
         outputs:
-          - "'Honk honk', the bus responds - and its wheels of steel start turning, while the speakers blast out the tune of the Vengabus."
+          - "'Honk honk', the bus responds - and its wheels of steel start turning, as the speakers blast out the tune of the Vengabus."
           - "The Vengaboys all flash you the v sign as the Volkswagen drives away."
       - inputs:
           - "boom"
           - "boom boom"
           - "boom boom boom boom"
         outputs:
-          - "You toss a ping-pong ball into a plastic cup; the Vengaboys all drink. But maybe there's something else you could do to help?"
+          - "You toss a ping-pong ball into a plastic cup; the Vengaboys all drink. You're not being helpful."
     north: false
     south: true
     west: true
