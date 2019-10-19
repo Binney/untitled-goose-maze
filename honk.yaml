@@ -4,15 +4,15 @@ intro:
     y: 3
   splashTitle:
     |
-    {light blue}. {orange}WQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQW
+    {light blue}. {orange}WQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQ
     {light blue}.            {white}RRRR
     {light blue}.  {yellow}GG   GG {white}NNEEEEMM {yellow}GGM  GG {white}GG NN {white}GG
     {light blue}.  {yellow}GGRRRGG {white}N      M {yellow}GGMM GG {white}GGNN  {white}GG
     {light blue}.  {yellow}GGEEEGG {white}G      G {yellow}GG MMGG {white}GGN   {white}GG
     {light blue}.  {yellow}GG   GG {white}M  RR  N {yellow}GG  MMG {white}GGMM
-    {light blue}.  {yellow}GG   GG {white}MMRRRRNN {yellow}GG   GG {white}GG MM
-    {light blue}.                                 {white}UI
-    {light blue}.  {orange}WQWQWQWQWQWQWQWQWQWQWQWQWQWQWQ {white}JK
+    {light blue}.  {yellow}GG   GG {white}MMRRRRNN {yellow}GG   GG {white}GG MM {white}UI
+    {light blue}.                                 {white}JK
+    {light blue}. {orange}QWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQW
     {light blue}.
     {light blue}.            {white}press enter{light blue}
   petsciiArt:
