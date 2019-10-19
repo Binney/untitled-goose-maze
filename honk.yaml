@@ -5,14 +5,14 @@ intro:
   splashTitle:
     |
     {light blue}. {orange}WQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQ
-    {light blue}.            {white}RRRR
-    {light blue}.  {yellow}GG   GG {white}NNEEEEMM {yellow}GGM  GG {white}GG NN {white}GG
-    {light blue}.  {yellow}GGRRRGG {white}N      M {yellow}GGMM GG {white}GGNN  {white}GG
-    {light blue}.  {yellow}GGEEEGG {white}G      G {yellow}GG MMGG {white}GGN   {white}GG
-    {light blue}.  {yellow}GG   GG {white}M  RR  N {yellow}GG  MMG {white}GGMM
+    {light blue}.            {white}RRRR                 {white}{cm a}{cm s}
+    {light blue}.  {yellow}GG   GG {white}NNEEEEMM {yellow}GGM  GG {white}GG NN {white}BB
+    {light blue}.  {yellow}GGRRRGG {white}N      M {yellow}GGMM GG {white}GGNN  {white}BB
+    {light blue}.  {yellow}GGEEEGG {white}G      G {yellow}GG MMGG {white}GGN   {white}BB
+    {light blue}.  {yellow}GG   GG {white}M  RR  N {yellow}GG  MMG {white}GGMM  {white}{cm z}{cm x}
     {light blue}.  {yellow}GG   GG {white}MMRRRRNN {yellow}GG   GG {white}GG MM {white}UI
     {light blue}.                                 {white}JK
-    {light blue}. {orange}QWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQW
+    {light blue}. {orange}QWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQW
     {light blue}.
     {light blue}.            {white}press enter{light blue}
   petsciiArt:
