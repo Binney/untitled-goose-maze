@@ -4,31 +4,28 @@ intro:
     y: 3
   splashTitle:
     |
-    . WQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQW
-    .            RRRR
-    .  GG   GG NNEEEEMM GGM  GG GG NN GG
-    .  GGRRRGG N      M GGMM GG GGNN  GG
-    .  GGEEEGG G      G GG MMGG GGN   GG
-    .  GG   GG M  RR  N GG  MMG GGMM
-    .  GG   GG MMRRRRNN GG   GG GG MM
-    .                                 UI
-    .  WQWQWQWQWQWQWQWQWQWQWQWQWQWQWQ JK
-    .
-    .            press enter
-  petsciiArts:
-    - |
-      ----------------------------
-
-         {white}/mnaa                    @@"
-        {orange}/{white}o@/ v@@@@   /@@@@@@@@@@@@@&"
-       {orange}/-'{white}     #@@@@@@@@@@@@@@@@@,"
-               v@@@@@@@@@@@@@@@@."
-                @@@@@@@@@@@@@@@,"
-                  v@@@@@@@@@@@#"
-                        @@@@@&"
-                          {orange}//{white}*"
-                     {orange}3..*//{light blue}"
-
+    {light blue}. {orange}WQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQW
+    {light blue}. {white}           RRRR
+    {light blue}. {white} GG   GG NNEEEEMM GGM  GG GG NN OP
+    {light blue}. {white} GGRRRGG N      M GGMM GG GGNN  {cm g}{cm n}
+    {light blue}. {white} GGEEEGG G      G GG MMGG GGN   L{sh @}
+    {light blue}. {white} GG   GG M  RR  N GG  MMG GGMM  UI
+    {light blue}. {white} GG   GG MMRRRRNN GG   GG GG MM JK
+    {light blue}. {white}
+    {light blue}. {orange}QWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQ
+    {light blue}.
+    {light blue}.            press enter
+  petsciiArt:
+    |
+    {light blue}.     {white}/mnaa                    @@"
+    {light blue}.    {orange}/{white}o@/ v@@@@   /@@@@@@@@@@@@@&"
+    {light blue}.   {orange}/-'{white}     #@@@@@@@@@@@@@@@@@,"
+    {light blue}.           {white}v@@@@@@@@@@@@@@@@."
+    {light blue}.            {white}@@@@@@@@@@@@@@@,"
+    {light blue}.              {white}v@@@@@@@@@@@#"
+    {light blue}.                    {white}@@@@@&"
+    {light blue}.                      {orange}//{white}*"
+    {light blue}.                 {orange}3..*//{light blue}"
   intros:
     - "you are a goose"
     - "you are a goose in a maze. the word softwire is printed on your stomach and this makes you unreasonably angry."
