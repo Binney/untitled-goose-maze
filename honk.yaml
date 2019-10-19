@@ -2,7 +2,7 @@ intro:
   startLocation:
     x: 3
     y: 3
-  asciiArts:
+  petsciiArts:
     - |
       ----------------------------
 

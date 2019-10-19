@@ -18,7 +18,7 @@ class Intro extends CodeBlock {
   constructor(doc) {
     super();
     this.prefix = "";
-    this.asciiArts = doc.asciiArts;
+    this.petsciiArts = doc.petsciiArts;
     this.intros = doc.intros;
     this.nextIndex = 10;
     this.startLocationX = doc.startLocation.x;
@@ -29,13 +29,13 @@ class Intro extends CodeBlock {
 
   generateLines() {
     const startLine = this.addNewLine(this.getNextIndex(), 'REM INTRO');
-    this.asciiArts.forEach(asciiArt => this.generateAsciiArtCode(asciiArt));
+    this.petsciiArts.forEach(petsciiArt => this.generatePetsciiArtCode(petsciiArt));
     this.intros.forEach(intro => this.generateIntroCode(intro));
     this.addNewLine(this.getNextIndex(), `GOTO ${Location.buildPrefix(this.startLocationX, this.startLocationY)}000`);
   }
 
-  generateAsciiArtCode(asciiArt) {
-    asciiArt.split(/\r?\n/).forEach(intro => this.addNewLine(this.getNextIndex(), `PRINT "${processString(intro)}"`));
+  generatePetsciiArtCode(petsciiArt) {
+    petsciiArt.split(/\r?\n/).forEach(petsciiLine => this.addNewLine(this.getNextIndex(), `PRINT "${petsciiLine}"`));
     this.addNewLine(this.getNextIndex(), 'PRINT');
     this.addNewLine(this.getNextIndex(), 'INPUT ">"; C$ : PRINT');
   }
