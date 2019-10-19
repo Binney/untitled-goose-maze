@@ -19,7 +19,7 @@ class Intro extends CodeBlock {
     super();
     this.prefix = "";
     this.splashTitle = doc.splashTitle;
-    this.petsciiArts = doc.petsciiArts;
+    this.petsciiArt= doc.petsciiArt;
     this.intros = doc.intros;
     this.nextIndex = 10;
     this.startLocationX = doc.startLocation.x;
@@ -31,7 +31,7 @@ class Intro extends CodeBlock {
   generateLines() {
     const startLine = this.addNewLine(this.getNextIndex(), 'REM INTRO');
     this.generateSplashTitleCode(this.splashTitle);
-    this.petsciiArts.forEach(petsciiArt => this.generatePetsciiArtCode(petsciiArt));
+    this.generatePetsciiArtCode(this.petsciiArt);
     this.intros.forEach(intro => this.generateIntroCode(intro));
     this.addNewLine(this.getNextIndex(), `GOTO ${Location.buildPrefix(this.startLocationX, this.startLocationY)}000`);
   }

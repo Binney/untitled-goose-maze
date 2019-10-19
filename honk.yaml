@@ -4,31 +4,28 @@ intro:
     y: 3
   splashTitle:
     |
-    . {orange}WQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQW
-    .            {white}RRRR
-    .  {yellow}GG   GG {white}NNEEEEMM {yellow}GGM  GG {white}GG NN {white}GG
-    .  {yellow}GGRRRGG {white}N      M {yellow}GGMM GG {white}GGNN  {white}GG
-    .  {yellow}GGEEEGG {white}G      G {yellow}GG MMGG {white}GGN   {white}GG
-    .  {yellow}GG   GG {white}M  RR  N {yellow}GG  MMG {white}GGMM
-    .  {yellow}GG   GG {white}MMRRRRNN {yellow}GG   GG {white}GG MM
-    .                                 {white}UI
-    .  {orange}WQWQWQWQWQWQWQWQWQWQWQWQWQWQWQ {white}JK
-    .
-    .            press enter{light blue}
-  petsciiArts:
-    - |
-      ----------------------------
-
-         {white}/mnaa                    @@"
-        {orange}/{white}o@/ v@@@@   /@@@@@@@@@@@@@&"
-       {orange}/-'{white}     #@@@@@@@@@@@@@@@@@,"
-               v@@@@@@@@@@@@@@@@."
-                @@@@@@@@@@@@@@@,"
-                  v@@@@@@@@@@@#"
-                        @@@@@&"
-                          {orange}//{white}*"
-                     {orange}3..*//{light blue}"
-
+    {light blue}. {orange}WQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQW
+    {light blue}.            {white}RRRR
+    {light blue}.  {yellow}GG   GG {white}NNEEEEMM {yellow}GGM  GG {white}GG NN {white}GG
+    {light blue}.  {yellow}GGRRRGG {white}N      M {yellow}GGMM GG {white}GGNN  {white}GG
+    {light blue}.  {yellow}GGEEEGG {white}G      G {yellow}GG MMGG {white}GGN   {white}GG
+    {light blue}.  {yellow}GG   GG {white}M  RR  N {yellow}GG  MMG {white}GGMM
+    {light blue}.  {yellow}GG   GG {white}MMRRRRNN {yellow}GG   GG {white}GG MM
+    {light blue}.                                 {white}UI
+    {light blue}.  {orange}WQWQWQWQWQWQWQWQWQWQWQWQWQWQWQ {white}JK
+    {light blue}.
+    {light blue}.            {white}press enter{light blue}
+  petsciiArt:
+    |
+    {light blue}.     {white}/mnaa                    @@"
+    {light blue}.    {orange}/{white}o@/ v@@@@   /@@@@@@@@@@@@@&"
+    {light blue}.   {orange}/-'{white}     #@@@@@@@@@@@@@@@@@,"
+    {light blue}.           {white}v@@@@@@@@@@@@@@@@."
+    {light blue}.            {white}@@@@@@@@@@@@@@@,"
+    {light blue}.              {white}v@@@@@@@@@@@#"
+    {light blue}.                    {white}@@@@@&"
+    {light blue}.                      {orange}//{white}*"
+    {light blue}.                 {orange}3..*//{light blue}"
   intros:
     - "you are a goose"
     - "you are a goose in a maze. the word softwire is printed on your stomach and this makes you unreasonably angry."
