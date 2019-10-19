@@ -15,24 +15,25 @@ intro:
     .  WQWQWQWQWQWQWQWQWQWQWQWQWQWQWQ JK
     .
     .            press enter
-  introBlocks:
+  petsciiArts:
     - |
       ----------------------------
 
-         /mn--                    @@"
-        /o / Y@@@@   /@@@@@@@@@@@@@&"
-       /-'     #@@@@@@@@@@@@@@@@@,"
+         {white}/mnaa                    @@"
+        {orange}/{white}o@/ v@@@@   /@@@@@@@@@@@@@&"
+       {orange}/-'{white}     #@@@@@@@@@@@@@@@@@,"
                v@@@@@@@@@@@@@@@@."
                 @@@@@@@@@@@@@@@,"
                   v@@@@@@@@@@@#"
                         @@@@@&"
-                          //*"
-                     3..*/"
+                          {orange}//{white}*"
+                     {orange}3..*//{light blue}"
 
-        you are a goose
-    - you are a goose in a maze. the word softwire is printed on your stomach and this makes you unreasonably angry.
-    - you instinctively start to follow the left wall, but the graduate recruitment process has recently been revamped, so instead of going forward, left and right your movement options are *north*, *south*, *east* or *west*.
-    - you can *look* around you
+  intros:
+    - "you are a goose"
+    - "you are a goose in a maze. the word softwire is printed on your stomach and this makes you unreasonably angry."
+    - "you instinctively start to follow the left wall, but the graduate recruitment process has recently been revamped, so instead of going forward, left and right your movement options are [[north]], [[south]], [[east]] or [[west]]."
+    - "you can [[look]] around you"
 global:
   actions:
     - inputs:
@@ -77,7 +78,7 @@ locations:
     y: 1
     intros:
       - "As you turn the corner, you find four flamboyantly dressed dutch men and women. They're all gathered round a garishly coloured Volkswagen Type 2 minibus."
-      - "'We can't get this damn thing to start! I think it must be out of tune - if only we had the right sound to kickstart it!'"
+      - "'We gotta put some wheels in motion, but this thing's stalled! I think it must be out of tune; we need the right sound to kickstart it!'"
       - "there are walls to the north and east."
     actions:
       - inputs:
@@ -85,13 +86,15 @@ locations:
           - "honk honk"
           - "toot"
           - "toot toot"
+        outputs:
+          - "'Honk honk', the bus responds - and its wheels of steel start turning, as the speakers blast out the tune of the Vengabus."
+          - "The Vengaboys all flash you the v sign as the Volkswagen drives away."
+      - inputs:
           - "boom"
           - "boom boom"
           - "boom boom boom boom"
         outputs:
-          - "'Honk honk', the bus responds - and the wheels get put in motion, as the speakers start blasting out the tune of the Vengabus."
-          - "The Vengaboys all flash you the v sign as the Volkswagen drives away."
-
+          - "You toss a ping-pong ball into a plastic cup; the Vengaboys all drink. You're not being helpful."
     north: false
     south: true
     west: true
@@ -120,7 +123,7 @@ locations:
         outputs:
           - "You pick up the cassette with your bill, pluck it into the cassette player, and hit 'play'."
           - "The player emits a terrible screeching sound:"
-          - "'eeeeeeeeeeeeeeeeeee-e-e-e-e-e-e-e-eeeeeeeeeeeeeeeeeeeee-e-e-e-e-e-eeeeeeeeeeeeeeeee'"
+          - "'eeeeeeeeeeeeeeeeeee-e-e-e-e-e-e-e-eeee eeeeeeeeeeeeeeeeee-e-e-e-e-e-eeeeeeeeee eeeeeee'"
           - "Why would anyone record such a dreadful tune? Even ecstasy couldn't help you enjoy that. You wish you were listening to chill-e saviour instead."
     north: false
     south: true
@@ -165,9 +168,9 @@ locations:
           - "knock over glass"
         outputs:
           - "You knock over the glass with your bill; it bangs on the table. The haiduc stands up at once:"
-          - "'Of course, Hanton - how could you have been so foolish? I must shout to my horse!'"
+          - "'Of course, Handrii Popa - how could you have been so foolish? I must shout to my horse!'"
           - "'Hugo, Hugo, how am I to find you?'"
-          - "A neighing sounds off from behind a wall. Hanton the haiduc runs off."
+          - "A neighing sounds off from behind a wall. Handrii the haiduc runs off."
           - "You notice he has forgot his handkerchief. It is embroidered with the letter 'H'."
     north: false
     south: true
