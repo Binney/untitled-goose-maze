@@ -18,7 +18,8 @@ class Intro extends CodeBlock {
   constructor(doc) {
     super();
     this.prefix = "";
-    this.introBlocks = doc.introBlocks;
+    this.asciiArts = doc.asciiArts;
+    this.intros = doc.intros;
     this.nextIndex = 10;
     this.startLocationX = doc.startLocation.x;
     this.startLocationY = doc.startLocation.y;
@@ -28,12 +29,21 @@ class Intro extends CodeBlock {
 
   generateLines() {
     const startLine = this.addNewLine(this.getNextIndex(), 'REM INTRO');
-    this.introBlocks.forEach(introBlock => this.generateIntroBlockCode(introBlock));
-    this.addNewLine(this.getNextIndex(), `GOTO ${Location.buildPrefix(this.startLocationX, this.startLocationY)}00`);
+    this.asciiArts.forEach(asciiArt => this.generateAsciiArtCode(asciiArt));
+    this.intros.forEach(intro => this.generateIntroCode(intro));
+    this.addNewLine(this.getNextIndex(), `GOTO ${Location.buildPrefix(this.startLocationX, this.startLocationY)}000`);
   }
 
-  generateIntroBlockCode(introBlock) {
-    introBlock.split(/\r?\n/).forEach(intro => this.addNewLine(this.getNextIndex(), `PRINT "${processText(intro)}"`));
+  generateAsciiArtCode(asciiArt) {
+    asciiArt.split(/\r?\n/).forEach(intro => this.addNewLine(this.getNextIndex(), `PRINT "${processString(intro)}"`));
+    this.addNewLine(this.getNextIndex(), 'PRINT');
+    this.addNewLine(this.getNextIndex(), 'INPUT ">"; C$ : PRINT');
+  }
+
+  generateIntroCode(intro) {
+    splitTextIntoLines(intro).forEach(textLine => {
+      this.addNewLine(this.getNextIndex(), `PRINT "${processString(textLine)}"`)
+    });
     this.addNewLine(this.getNextIndex(), 'PRINT');
     this.addNewLine(this.getNextIndex(), 'INPUT ">"; C$ : PRINT');
   }
@@ -43,21 +53,6 @@ class Intro extends CodeBlock {
     this.nextIndex++;
     return index;
   }
-}
-
-function processText(text) {
-  let processedText = text.toLowerCase();
-  processedText = replaceAll(processedText, "[[", "{cyan}");
-  processedText = replaceAll(processedText, "]]", "{light blue}");
-  return processedText;
-}
-
-function replaceAll(string, searchValue, replaceValue) {
-  let processedString = string;
-  while (processedString.indexOf(searchValue) > 0) {
-    processedString = processedString.replace(searchValue, replaceValue);
-  }
-  return processedString;
 }
 
 class Location extends CodeBlock {
@@ -70,8 +65,8 @@ class Location extends CodeBlock {
     this.intros = doc.intros;
     this.actions = (doc.actions || []).concat(globalDoc.actions);
     this.nextIntroIndex = 0;
-    this.nextInputIndex = 10;
-    this.nextOutputIndex = 50;
+    this.nextInputIndex = 100;
+    this.nextOutputIndex = 200;
     this.north = doc.north;
     this.south = doc.south;
     this.east = doc.east;
@@ -82,41 +77,55 @@ class Location extends CodeBlock {
 
   generateLines() {
     const startLine = this.addNewLine(this.getNextIntroIndex(), `REM ${this.name}`);
-    this.intros.forEach(intro => this.addNewLine(this.getNextIntroIndex(), `PRINT "${processText(intro)}" : PRINT`));
+    this.intros.forEach(intro => {
+      splitTextIntoLines(intro).forEach(textLine => {
+        this.addNewLine(this.getNextIntroIndex(), `PRINT "${processString(textLine)}"`)
+      });
+      this.addNewLine(this.getNextIntroIndex(), 'PRINT')
+    });
     this.inputLine = this.addNewLine(this.getNextIntroIndex(), 'C$ = "" : INPUT ">"; C$ : PRINT');
     const bonkLine = this.addNewLine(this.getNextOutputIndex(), `PRINT "bonk!" : PRINT : GOTO ${this.inputLine.number}`);
 
     this.addNewLine(this.getNextInputIndex(), `IF C$ = "look" GOTO ${startLine.number};`);
 
     if (this.west) {
-      this.addNewLine(this.getNextInputIndex(), `IF C$ = "west" OR C$ = "go west" GOTO ${Location.buildPrefix(this.x - 1, this.y)}00;`);
+      this.addNewLine(this.getNextInputIndex(), `IF C$ = "west" OR C$ = "go west" GOTO ${Location.buildPrefix(this.x - 1, this.y)}000;`);
     } else {
       this.addNewLine(this.getNextInputIndex(), `IF C$ = "west" OR C$ = "go west" GOTO ${bonkLine.number};`);
     }
 
     if (this.east) {
-      this.addNewLine(this.getNextInputIndex(), `IF C$ = "east" OR C$ = "go east" GOTO ${Location.buildPrefix(this.x + 1, this.y)}00;`);
+      this.addNewLine(this.getNextInputIndex(), `IF C$ = "east" OR C$ = "go east" GOTO ${Location.buildPrefix(this.x + 1, this.y)}000;`);
     } else {
       this.addNewLine(this.getNextInputIndex(), `IF C$ = "east" OR C$ = "go east" GOTO ${bonkLine.number};`);
     }
 
     if (this.north) {
-      this.addNewLine(this.getNextInputIndex(), `IF C$ = "north" OR C$ = "go north" GOTO ${Location.buildPrefix(this.x, this.y - 1)}00;`);
+      this.addNewLine(this.getNextInputIndex(), `IF C$ = "north" OR C$ = "go north" GOTO ${Location.buildPrefix(this.x, this.y - 1)}000;`);
     } else {
       this.addNewLine(this.getNextInputIndex(), `IF C$ = "north" OR C$ = "go north" GOTO ${bonkLine.number};`);
     }
 
     if (this.south) {
-      this.addNewLine(this.getNextInputIndex(), `IF C$ = "south" OR C$ = "go south" GOTO ${Location.buildPrefix(this.x, this.y + 1)}00;`);
+      this.addNewLine(this.getNextInputIndex(), `IF C$ = "south" OR C$ = "go south" GOTO ${Location.buildPrefix(this.x, this.y + 1)}000;`);
     } else {
       this.addNewLine(this.getNextInputIndex(), `IF C$ = "south" OR C$ = "go south" GOTO ${bonkLine.number};`);
     }
 
     if (this.actions) {
       this.actions.forEach(action => {
-        const outputLines = action.outputs.map(output => this.addNewLine(this.getNextOutputIndex(), `PRINT "${processText(output)}" : PRINT`));
+        let firstOutputLine;
+        action.outputs.forEach(output => {
+          splitTextIntoLines(output).forEach(textLine => {
+            const line = this.addNewLine(this.getNextOutputIndex(), `PRINT "${processString(textLine)}"`);
+            if (firstOutputLine === undefined) {
+              firstOutputLine = line;
+            }
+          });
+          this.addNewLine(this.getNextOutputIndex(), 'PRINT')
+        });
         this.addNewLine(this.getNextOutputIndex(), `GOTO ${this.inputLine.number}`);
-        action.inputs.forEach(input => this.addNewLine(this.getNextInputIndex(), `IF C$ = "${input.toLowerCase()}" GOTO ${outputLines[0].number};`));
+        action.inputs.forEach(input => this.addNewLine(this.getNextInputIndex(), `IF C$ = "${input.toLowerCase()}" GOTO ${firstOutputLine.number};`));
       });
     }
 
@@ -158,7 +167,7 @@ class Line {
 
   static lineNumber(prefix, index) {
     if (prefix.length > 0) {
-      return prefix + Line.padWithZeroes(index, 2);
+      return prefix + Line.padWithZeroes(index, 3);
     } else {
       return index.toString();
     }
@@ -171,6 +180,42 @@ class Line {
     }
     return string;
   }
+}
+
+function splitTextIntoLines(text) {
+  const MAX_LINE_LENGTH = 39;
+
+  const words = text.split(" ");
+
+  const {fullLines, latestLine} = words.reduce(({fullLines, latestLine}, word) => {
+    if (latestLine === "") {
+      return {fullLines: fullLines, latestLine: word};
+    } else {
+      const line = latestLine + " " + word;
+      if (replaceAll(replaceAll(line, "[[", ""), "]]", "").length > MAX_LINE_LENGTH) {
+        return {fullLines: fullLines.concat([latestLine]), latestLine: word}
+      } else {
+        return {fullLines: fullLines, latestLine: latestLine + " " + word}
+      }
+    }
+  }, {fullLines: [], latestLine: ""});
+
+  return fullLines.concat([latestLine]);
+}
+
+function processString(text) {
+  let processedText = text.toLowerCase();
+  processedText = replaceAll(processedText, "[[", "{cyan}");
+  processedText = replaceAll(processedText, "]]", "{light blue}");
+  return processedText;
+}
+
+function replaceAll(string, searchValue, replaceValue) {
+  let processedString = string;
+  while (processedString.indexOf(searchValue) >= 0) {
+    processedString = processedString.replace(searchValue, replaceValue);
+  }
+  return processedString;
 }
 
 module.exports = {

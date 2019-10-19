@@ -2,7 +2,7 @@ intro:
   startLocation:
     x: 3
     y: 3
-  introBlocks:
+  asciiArts:
     - |
       ----------------------------
 
@@ -16,10 +16,11 @@ intro:
                           //*"
                      3..*/"
 
-        you are a goose
-    - you are a goose in a maze. the word softwire is printed on your stomach and this makes you unreasonably angry.
-    - you instinctively start to follow the left wall, but the graduate recruitment process has recently been revamped, so instead of going forward, left and right your movement options are [[north]], [[south]], [[east]] or [[west]].
-    - you can [[look]] around you
+  intros:
+    - "you are a goose"
+    - "you are a goose in a maze. the word softwire is printed on your stomach and this makes you unreasonably angry."
+    - "you instinctively start to follow the left wall, but the graduate recruitment process has recently been revamped, so instead of going forward, left and right your movement options are [[north]], [[south]], [[east]] or [[west]]."
+    - "you can [[look]] around you"
 global:
   actions:
     - inputs:
@@ -107,7 +108,7 @@ locations:
         outputs:
           - "You pick up the cassette with your bill, pluck it into the cassette player, and hit 'play'."
           - "The player emits a terrible screeching sound:"
-          - "'eeeeeeeeeeeeeeeeeee-e-e-e-e-e-e-e-eeeeeeeeeeeeeeeeeeeee-e-e-e-e-e-eeeeeeeeeeeeeeeee'"
+          - "'eeeeeeeeeeeeeeeeeee-e-e-e-e-e-e-e-eeee eeeeeeeeeeeeeeeeee-e-e-e-e-e-eeeeeeeeee eeeeeee'"
           - "Why would anyone record such a dreadful tune? Even ecstasy couldn't help you enjoy that. You wish you were listening to chill-e saviour instead."
     north: false
     south: true
