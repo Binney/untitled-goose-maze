@@ -4,17 +4,17 @@ intro:
     y: 3
   splashTitle:
     |
-    . WQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQW
-    .            RRRR
-    .  GG   GG NNEEEEMM GGM  GG GG NN GG
-    .  GGRRRGG N      M GGMM GG GGNN  GG
-    .  GGEEEGG G      G GG MMGG GGN   GG
-    .  GG   GG M  RR  N GG  MMG GGMM
-    .  GG   GG MMRRRRNN GG   GG GG MM
-    .                                 UI
-    .  WQWQWQWQWQWQWQWQWQWQWQWQWQWQWQ JK
+    . {orange}WQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQW
+    .            {white}RRRR
+    .  {yellow}GG   GG {white}NNEEEEMM {yellow}GGM  GG {white}GG NN {white}GG
+    .  {yellow}GGRRRGG {white}N      M {yellow}GGMM GG {white}GGNN  {white}GG
+    .  {yellow}GGEEEGG {white}G      G {yellow}GG MMGG {white}GGN   {white}GG
+    .  {yellow}GG   GG {white}M  RR  N {yellow}GG  MMG {white}GGMM
+    .  {yellow}GG   GG {white}MMRRRRNN {yellow}GG   GG {white}GG MM
+    .                                 {white}UI
+    .  {orange}WQWQWQWQWQWQWQWQWQWQWQWQWQWQWQ {white}JK
     .
-    .            press enter
+    .            press enter{light blue}
   petsciiArts:
     - |
       ----------------------------
@@ -109,8 +109,10 @@ locations:
       - inputs:
           - "examine cassette"
           - "use cassette"
+          - "play cassette"
           - "examine cassette tape"
           - "use cassette tape"
+          - "play cassette tape"
           - "examine tape"
           - "use tape"
           - "examine cassette player"
@@ -143,6 +145,8 @@ locations:
           - "unwrap"
           - "rip paper"
           - "unwrap present"
+          - "open gift"
+          - "open gift wrap"
         outputs:
           - "you tear aside the paper with your beak. it's an elephant! for you! how considerate. this is a much better present than a commodore 64."
           - "you notice the elephant wears an ornate saddle embroidered with the letter a."
@@ -249,11 +253,21 @@ locations:
     y: 2
     intros:
       - "You enter what appears to be an office cafeteria. A sign on the wall to the west reads 'data connections'. There is another wall to the east."
-      - "Three thick-haired young men are crowded around a table, talking in hushed voices:"
-      - "'So what could we call it then? O - Softwore?'"
-      - "'Sounds like a used clothing company. E - Softwere?'"
-      - "'Nah, makes us sound like have-beens. U - Softwure?'"
-      - "'I - I think there must be a right answer, but it's eluding me right now.'"
+      - "Three thick-haired young men are crowded around a table, talking in hushed voices."
+    actions:
+      - inputs:
+        - "eavesdrop"
+        - "listen"
+        - "listen to men"
+        - "listen to dan"
+        - "listen to pete"
+        - "listen to phil"
+        - "listen to conversation"
+        outputs:
+        - "'So what could we call it then? O - Softwore?'"
+        - "'Sounds like a used clothing company. E - Softwere?'"
+        - "'Nah, makes us sound like have-beens. U - Softwure?'"
+        - "'I - I think there must be a right answer, but it's eluding me right now.'"
     north: true
     south: true
     west: false
@@ -270,6 +284,8 @@ locations:
       - inputs:
         - "eat"
         - "eat paper"
+        - "eat the paper"
+        - "eat the papers"
         - "eat script"
         - "eat pile of paper"
         - "consume paper"
@@ -309,7 +325,7 @@ locations:
     x: 3
     y: 3
     intros:
-      - "you are at a crossroads, to the west of a white house. there is a small *mailbox* here."
+      - "you are at a crossroads, to the west of a white house. there is a small [[mailbox]] here."
     actions:
       - inputs:
           - "open mailbox"
