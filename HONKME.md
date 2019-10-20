@@ -1,25 +1,25 @@
 # Honk?
 
-An engine for building goose-themed text adventure games for the C64.
+Honk honk honk honk honk-themed honk honk honk honk honk honk.
 
-Games are specified in yaml and transpiled to C64 BASIC.
+Honk honk honk honk honk honk honk honk honk honk.
 
-# Goos-ing started
+# Honk-ing honk
 
-1. Clone this repo
-2. Run `npm install` to fetch dependencies
-3. Run `node zorkify.js` to compile yaml files into .bas files
+1. Honk honk honk
+2. Honk honk honk `honk` honk honk
+3. Honk honk `honk.js` honk honk honk honk honk honk honk
 
-# Emulation
+# Honk
 
-1. Install [CMBPRG Studio](https://www.ajordison.co.uk/download.html) and [Vice](http://vice-emu.sourceforge.net/)
-2. Open CMBPRG Studio
-3. Go to Tools / Options / Project, pick a default directory - this is where you'll copy the compiled .bas files
-4. Tools / Options / Emulator Control, set the path to `C:\...\c64\GTK3VICE-3.3-win32-r35872\x64.exe` or similar.
-5. File / New BASIC project. Type `10 PRINT "honk"` in the window and press F5
-6. A few second later you should receive a C64 emulation window containing the desired `HONK` output; if not, panic.
+1. [honk honk honk](https://www.ajordison.co.uk/download.html) [honk honk](http://vice-emu.sourceforge.net/)
+2. Honk honk honk.
+3. Honk honk honk honk honk honk honk, honk honk honk honk honk honk honk honk honk'll honk honk honk honk honk.
+4. Honk honk honk honk honk honk, honk honk honk honk honk: `\...\c64\GTK3VICE-3.3-win32-r35872\x64.exe` honk honk.
+5. Honk honk honk honk honk. honk `honk honk "honk"` honk honk honk honk honk honk
+6. Honk honk honk honk honk honk honk honk honk honk honk honk `honk honk honk` honk; honk honk, honk.
 
-# Frequently Honked Questions
+# Honk honk honk
 
-## Honk?
+## honk?
 _Honk!_
