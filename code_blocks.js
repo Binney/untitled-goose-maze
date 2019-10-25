@@ -79,12 +79,16 @@ class Location extends CodeBlock {
     this.south = doc.south;
     this.east = doc.east;
     this.west = doc.west;
+    this.debug = globalDoc.debug;
 
     this.generateLines();
   }
 
   generateLines() {
     const startLine = this.addNewLine(this.getNextIntroIndex(), `REM ${this.name}`);
+    if (this.debug) {
+      this.addNewLine(this.getNextIntroIndex(), `PRINT "debug: ${this.name.toLowerCase()}"`)
+    }
     this.intros.forEach(intro => {
       splitTextIntoLines(intro).forEach(textLine => {
         this.addNewLine(this.getNextIntroIndex(), `PRINT "${processString(textLine)}"`)
