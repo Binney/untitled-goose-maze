@@ -1,0 +1,525 @@
+intro:
+  startLocation:
+    x: 3
+    y: 3
+  splashTitle:
+    |
+    {light blue}. {orange}WQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQ
+    {light blue}.            {white}RRRR                 {white}{cm a}{cm s}
+    {light blue}.  {yellow}GG   GG {white}NNEEEEMM {yellow}GGM  GG {white}GG NN {white}BB
+    {light blue}.  {yellow}GGRRRGG {white}N      M {yellow}GGMM GG {white}GGNN  {white}BB
+    {light blue}.  {yellow}GGEEEGG {white}G      G {yellow}GG MMGG {white}GGN   {white}BB
+    {light blue}.  {yellow}GG   GG {white}M  RR  N {yellow}GG  MMG {white}GGMM  {white}{cm z}{cm x}
+    {light blue}.  {yellow}GG   GG {white}MMRRRRNN {yellow}GG   GG {white}GG MM {white}UI
+    {light blue}.                                 {white}JK
+    {light blue}. {orange}QWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQW
+    {light blue}.
+    {light blue}.            {white}press enter{light blue}
+  petsciiArt:
+    |
+    {light blue}.     {white}/mnaa                    @@"
+    {light blue}.    {orange}/{white}o@/ v@@@@   /@@@@@@@@@@@@@&"
+    {light blue}.   {orange}/-'{white}     #@@@@@@@@@@@@@@@@@,"
+    {light blue}.           {white}v@@@@@@@@@@@@@@@@."
+    {light blue}.            {white}@@@@@@@@@@@@@@@,"
+    {light blue}.              {white}v@@@@@@@@@@@#"
+    {light blue}.                    {white}@@@@@&"
+    {light blue}.                      {orange}//{white}*"
+    {light blue}.                 {orange}3..*//{light blue}"
+  intros:
+    - "you are a goose"
+    - "you are a goose in a maze. the word softwire is printed on your stomach and this makes you unreasonably angry."
+    - "you instinctively start to follow the left wall, but the graduate recruitment process has recently been revamped, so instead of going forward, left and right your movement options are [[north]], [[south]], [[east]] or [[west]]."
+    - "you can [[look]] around you"
+global:
+  actions:
+    - inputs:
+        - "honk"
+      outputs:
+        - "honk... onk... onk... nk..."
+    - inputs:
+        - "f"
+      outputs:
+        - "you pay respects"
+locations:
+  - name: "1 h - horse"
+    x: 1
+    y: 1
+    intros:
+      - "you find a horse. he looks roughly four years old. he has a name badge on his horse-collar."
+      - "there are walls to the north, south and west."
+    actions:
+      - inputs:
+          - "examine collar"
+          - "examine badge"
+          - "examine name badge"
+        outputs:
+          - "the badge has a big H on it. on the reverse side the badge reads 'hugo', followed by an email to contact if the horse is lost."
+          - "before you can call the number, though, he bares his teeth as if to bite, so you back away."
+    north: false
+    south: false
+    west: false
+    east: true
+  - name: "2 a - description of letter"
+    x: 2
+    y: 1
+    intros:
+      - "another alarmingly ample object is at this junction. it's built from two diagonal struts leaning against each other, with a crossbar connecting them halfway up."
+      - "there is a wall to the north."
+    north: false
+    south: true
+    west: true
+    east: true
+  - name: "3 v - vengaboys"
+    x: 3
+    y: 1
+    intros:
+      - "As you turn the corner, you find four flamboyantly dressed dutch men and women. They're all gathered round a garishly coloured Volkswagen Type 2 minibus."
+      - "'We gotta put some wheels in motion, but this thing's stalled! I think it must be out of tune; we need the right sound to kickstart it!'"
+      - "there are walls to the north and east."
+    actions:
+      - inputs:
+          - "honk"
+          - "honk honk"
+          - "toot"
+          - "toot toot"
+        outputs:
+          - "'Honk honk', the bus responds - and its wheels of steel start turning, as the speakers blast out the tune of the Vengabus."
+          - "The Vengaboys all flash you the v sign as the Volkswagen drives away."
+      - inputs:
+          - "boom"
+          - "boom boom"
+          - "boom boom boom boom"
+        outputs:
+          - "You toss a ping-pong ball into a plastic cup; the Vengaboys all drink. You're not being helpful."
+    north: false
+    south: true
+    west: true
+    east: false
+  - name: "4 e - cassette tape"
+    x: 4
+    y: 1
+    intros:
+      - "As you enter this room you spot a cassette tape on the floor. The handwritten label reads: 'untitled goose maze'."
+      - "There is a cassette player, and walls to the west and north."
+    actions:
+      - inputs:
+          - "examine cassette"
+          - "use cassette"
+          - "play cassette"
+          - "examine cassette tape"
+          - "use cassette tape"
+          - "play cassette tape"
+          - "examine tape"
+          - "use tape"
+          - "examine cassette player"
+          - "use cassette player"
+          - "examine player"
+          - "use player"
+          - "use cassette with player"
+          - "use cassette tape with player"
+          - "use tape with player"
+        outputs:
+          - "You pick up the cassette with your bill, pluck it into the cassette player, and hit 'play'."
+          - "The player emits a terrible screeching sound:"
+          - "'eeeeeeeeeeeeeeeeeee-e-e-e-e-e-e-e-eeee eeeeeeeeeeeeeeeeee-e-e-e-e-e-eeeeeeeeee eeeeeee'"
+          - "Why would anyone record such a dreadful tune? Even ecstasy couldn't help you enjoy that. You wish you were listening to chill-e saviour instead."
+    north: false
+    south: true
+    west: false
+    east: true
+  - name: "5 a - abul-abbas"
+    x: 5
+    y: 1
+    intros:
+      - "this square contains a huge something, which is pacing to and fro impatiently and waving its trunk about. you can't tell what it is because it's been gift-wrapped."
+      - "from one enormous ear hangs a tag: 'to charlie, merry xmas 808! lotsa love, harry al-rashid.'"
+      - "there are walls to the north and east."
+    actions:
+      - inputs:
+          - "unwrap paper"
+          - "tear paper"
+          - "unwrap"
+          - "rip paper"
+          - "unwrap present"
+          - "open gift"
+          - "open gift wrap"
+        outputs:
+          - "you tear aside the paper with your beak. it's an elephant! for you! how considerate. this is a much better present than a commodore 64."
+          - "you notice the elephant wears an ornate saddle embroidered with the letter a."
+    north: false
+    south: true
+    west: true
+    east: false
+  - name: "6 h - haiduc"
+    x: 1
+    y: 2
+    intros:
+      - "You enter an alcove with walls to the east, west and north."
+      - "Sitting at a table, there is a man who appears to be some kind of highwayman or outlaw - or perhaps a freedom fighter, depending on whom you ask."
+      - "'Sunt eu un... haiduc? How can I be a haiduc without my trusted steed?', he laments. 'But my horse has run off - how am I to find him?'"
+      - "He seems to be drowning his sorrows by drinking from a glass."
+    actions:
+      - inputs:
+          - "use glass"
+          - "examine glass"
+          - "bang glass"
+          - "bang your glass"
+          - "bang your glass on the table"
+          - "knock over glass"
+        outputs:
+          - "You knock over the glass with your bill; it bangs on the table. The haiduc stands up at once:"
+          - "'Of course, Handrii Popa - how could you have been so foolish? I must shout to my horse!'"
+          - "'Hugo, Hugo, how am I to find you?'"
+          - "A neighing sounds off from behind a wall. Handrii the haiduc runs off."
+          - "You notice he has forgot his handkerchief. It is embroidered with the letter 'H'."
+    north: false
+    south: true
+    west: false
+    east: false
+  - name: "7 o - op-1"
+    x: 2
+    y: 2
+    intros:
+      - "there is an extremely expensive synth on the floor here. presumably somebody paid £600 for it in some sort of online auction, but the sale turned out to be a scam so they discarded it here."
+      - "the only exit is north."
+    actions:
+      - inputs:
+          - "play synth"
+          - "play keyboard"
+          - "keyboard synth"
+          - "keyboard keyboard"
+        outputs:
+          - "silly you! you are a goose, so you cannot play the synth. instead you waddle over the keys repeatedly. they make pleasing electronic sounds."
+          - "you accidentally tread mud into the keyboard so you can't read the full name, but all you see is the letter o."
+    north: true
+    south: false
+    west: false
+    east: false
+  - name: "8 n - axe"
+    x: 3
+    y: 2
+    intros:
+      - "As you wander the labyrinth you find what appears to be the corpse of an adventurer lying against the eastern wall. He's not in particularly good shape - his eyeballs are long past their best-before date - but his possessions absolutely are."
+    north: true
+    south: true
+    west: false
+    east: true
+    actions:
+      - inputs:
+        - "search corpse"
+        - "search adventurer"
+        - "search body"
+        - "examine corpse"
+        - "examine adventurer"
+        - "examine body"
+        - "loot corpse"
+        - "loot adventurer"
+        - "loot body"
+        - "search belongings"
+        - "search possessions"
+        outputs:
+        - "strung over his back is a satchel full of letters, a gleaming purple guitar, and the largest axe you have ever seen. It's huge. It's even bigger than wizzair's checked-in baggage allowance. It's also very sharp."
+        - "You might be a goose, but you know how rpgs work, and that axe probably gives +5 two-handed damage plus bleeding or something. It'd be a crime to leave it here to rust."
+      - inputs:
+        - "take axe"
+        - "steal axe"
+        - "equip axe"
+        - "axe"
+        outputs:
+          - "You pull and pull at the axe's handle, but it's simply too heavy - you are unable to shift it. The guitar proves even heavier."
+          - "You make do instead by picking one of his letters out at random. It turns out to be an N."
+  - name: "9 k - grue"
+    x: 4
+    y: 2
+    intros:
+      - "this square is pitch black. you are somewhat worried there might be carnivores that inhabit dark places and feed on unwitting geese."
+      - "there are walls to the south and east."
+    north: true
+    south: false
+    west: true
+    east: false
+    actions:
+      - inputs:
+        - "honk"
+        outputs:
+          - "fortunately, you are a goose, and you're pretty sure those grues are more afraid of you than you are of them. you honk extremely loudly."
+          - "the chitter of terrified creatures recedes into the darkness. it sounds like they are saying 'kkkkkkkkkkkkkkk'."
+  - name: "10 i - dan, pete and phil"
+    x: 5
+    y: 2
+    intros:
+      - "You enter what appears to be an office cafeteria. A sign on the wall to the west reads 'data connections'. There is another wall to the east."
+      - "Three thick-haired young men are crowded around a table, talking in hushed voices."
+    actions:
+      - inputs:
+        - "eavesdrop"
+        - "listen"
+        - "listen to men"
+        - "listen to dan"
+        - "listen to pete"
+        - "listen to phil"
+        - "listen to conversation"
+        outputs:
+        - "'So what could we call it then? O - Softwore?'"
+        - "'Sounds like a used clothing company. E - Softwere?'"
+        - "'Nah, makes us sound like have-beens. U - Softwure?'"
+        - "'I - I think there must be a right answer, but it's eluding me right now.'"
+    north: true
+    south: true
+    west: false
+    east: false
+  - name: "11 n - panto"
+    x: 1
+    y: 3
+    intros:
+      - "As you enter this next square, you remember you are tremendously hungry."
+      - "On any normal day you would go to the pond and bully the ducks for their lunch money, but all there seems to be here is a big table covered in fancy dress costumes and a heavy sheaf of paper."
+      - "Really tasty looking paper."
+      - "There are walls to the south and west, and you can hear someone yelling 'where the bloody hell is the script?'"
+    actions:
+      - inputs:
+        - "eat"
+        - "eat paper"
+        - "eat the paper"
+        - "eat the papers"
+        - "eat script"
+        - "eat pile of paper"
+        - "consume paper"
+        outputs:
+          - "You make quick work of the pile of papers, which could use a little seasoning. Just as you're about to polish off the final page a harassed-looking software developer hurries around a corner."
+          - "They stop in shock to see you munch one of the letters out of the final page:"
+          - "'softpa t 2019'"
+          - "You are chased out of the square by a mob of angry devs faster than you can say 'lincoln stone'."
+    north: true
+    south: false
+    west: false
+    east: true
+  - name: "12 g - jewelled egg"
+    x: 2
+    y: 3
+    intros:
+      - "you stumble into a forest and quickly become very lost. honestly, how long have you been playing this game? aren't geese supposed to have a honing instinct? or is that pigeons?"
+      - "anyway"
+      - "you wander around aimlessly until you find a clearing. in the middle of the clearing is a pile of leaves."
+      - "the foliage to the north and south is impenetrable."
+    actions:
+      - inputs:
+        - "disturb leaves"
+        - "examine leaves"
+        - "search leaves"
+        - "disturb pile"
+        - "examine pile"
+        - "search pile"
+        outputs:
+          - "you fish around in the pile of leaves, and find... an egg encrusted with jewels!"
+          - "hey, wait, this is actually just the letter g. oh well. better keep looking for that treasure."
+    north: false
+    south: false
+    west: true
+    east: true
+  - name: "13 G - Letterbox"
+    x: 3
+    y: 3
+    intros:
+      - "you are at a crossroads, to the west of a white house. there is a small [[mailbox]] here."
+    actions:
+      - inputs:
+          - "open mailbox"
+          - "examine mailbox"
+        outputs:
+          - "you open the mailbox with your bill. there is a letter in the mailbox."
+          - "that letter is: g"
+    north: true
+    south: true
+    west: true
+    east: true
+  - name: "14 R - White House"
+    x: 4
+    y: 3
+    intros:
+      - "the door to the white house is boarded up, probably following the impeachment enquiry."
+      - "the letter r is scratched into the board."
+      - "there are walls to the north and south."
+    north: false
+    south: false
+    west: true
+    east: true
+  - name: "15 e - mosquitos"
+    x: 5
+    y: 3
+    intros:
+      - "there is a thin droning sound here. it is utterly infuriating. it drills into your skull."
+      - "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+      - "suddenly your wings are covered in insect bites and you have no idea how they got there."
+      - "there's a white house to the west of you, and walls to the south and east."
+    north: true
+    south: false
+    west: true
+    east: false
+  - name: "16 a - insert muse reference here"
+    x: 1
+    y: 4
+    intros:
+      - "you find a man with sparkly clothes, neon glasses and a keytar. he says, 'my name is matt bellamy. would you like me to sing you a song?'"
+      - "there are walls to the north and west."
+    actions:
+      - inputs:
+        - "reply"
+        - "reply to matt"
+        - "reply to matt bellamy"
+        - "yes"
+        - "no"
+        - "answer"
+        - "sing"
+        outputs:
+          - "silly you! you are a goose and cannot speak the human tongue. there is only one way you know how to communicate..."
+      - inputs:
+          - "honk"
+        outputs:
+          - "matt bellamy sings the highest note he possibly can. it is exactly a semitone higher than the g#5 he hits in showbiz. his own glasses shatter under the strain."
+          - "'i thought you only went up to a g#5', you honk."
+          - "'well that's muse to me', replies matt bellamy."
+    north: false
+    south: true
+    west: false
+    east: true
+  - name: "17 t - 3d"
+    x: 2
+    y: 4
+    intros:
+      - "there's a peculiar sculpture here, comprising a tall thin vertical trunk with a horizontal bar across the top."
+      - "there are walls to the east and north."
+    north: false
+    south: true
+    west: true
+    east: false
+  - name: "18 b - bear"
+    x: 3
+    y: 4
+    intros:
+      - "there is a huge black bear here. you waddle cautiously along the wall, but he's distracted by a hive high above you."
+      - "a buzzing sound is coming from the hive, but no matter how tall you crane your neck you can't tell what's inside."
+      - "there are walls to the east and west."
+    north: true
+    south: true
+    west: false
+    east: false
+  - name: "19 i - something something maths"
+    x: 4
+    y: 4
+    intros:
+      - "the square root of minus one is also here. you wave and it nods politely before going back to its work."
+    north: false
+    south: false
+    west: false
+    east: true
+  - name: "20 r - picasso"
+    x: 5
+    y: 4
+    intros:
+      - "you are in what looks like an artist's studio - there are walls to the north and east."
+      - "a moldovan musician is working at an easel. he has a mobile phone. there is a landline phone on the wall."
+    actions:
+      - inputs:
+          - "examine easel"
+          - "use easel"
+        outputs:
+          - "the painting on the easel appears to be a collage of geometrical shapes; it's too high up for you to get a proper look; the moldovan musician shoos you away."
+      - inputs:
+          - "examine phone"
+          - "use phone"
+        outputs:
+          - "you peck away at the landline phone, dialling the moldovan musician's phone number. his mobile phone rings. he picks up the phone:"
+          - "'alo? alo! sunt eu, picasso! mi-ai dat beep! si sunt voinic!'"
+          - "while he is distracted, you knock over the easel and examine the painting; it's a portrait, but very reminiscent of the letter r."
+    north: false
+    south: true
+    west: true
+    east: false
+  - name: "21 t - toblerone"
+    x: 1
+    y: 5
+    intros:
+      - "you encounter a lot of triangles, each of which is totally unblerred. you consider blerring all of them, but there really are a lot and you simply don't have time."
+      - "you really, really want just to bler one."
+    actions:
+      - inputs:
+          - "toblerone"
+        outputs:
+          - "you invite the essence of the toblerone into the very core of your being. you emerge not quite the same goose, but changed, somehow, subtly, irreversibly. you see now that the letter you sought was: t. t for toblerone."
+    north: true
+    south: false
+    west: false
+    east: false
+  - name: "22 h - hatoful boyfriend"
+    x: 2
+    y: 5
+    intros:
+      - "There is a pigeon in this square. He is extremely attractive, with glossy white feathers and a twinkle in his eye."
+      - "'Anata ga ten kara ochita toki, sore wa itamimashita ka?' he asks."
+      - "Your japanese is pretty rusty, but you think he's coming on to you."
+      - "there are walls to the south and west."
+    actions:
+      - inputs:
+          - "honk"
+          - "seduce"
+          - "seduce pigeon"
+          - "flirt"
+          - "flirt pigeon"
+          - "flirt with pigeon"
+        outputs:
+          - "you honk flirtatiously."
+          - "'anata no hane ga totemo kitanainode, tobenaikaradesu ka? He. Kyuban.'"
+          - "The pigeon wanders off. you're pretty sure you have been insulted but don't know exactly how."
+          - "Anyway, he dropped this slip of paper from the tanabata festival, so you steal it."
+          - "the wish is for: h"
+    north: true
+    south: false
+    west: false
+    east: true
+  - name: "23 d - dacia duster"
+    x: 3
+    y: 5
+    intros:
+      - "this square features a brand new royal blue left-hand-drive dacia duster. it even has go-faster stripes and the letter d emblazoned on the bonnet."
+      - "the keys are in the ignition and the engine has been left running."
+    actions:
+      - inputs:
+          - "drive car"
+          - "drive"
+        outputs:
+          - "are you kidding?! you're a goose. you don't know how to drive a car."
+          - "however, you know exactly how to wedge the accelerator so the car drives into this nearby lake."
+      - inputs:
+          - "wedge accelerator"
+          - "accelerate"
+          - "press accelerator"
+        outputs:
+          - "the dacia duster sinks like a stone. you waddle off proudly, a hard day's work done."
+    north: true
+    south: false
+    west: true
+    east: true
+  - name: "24 a - atmosfear"
+    x: 4
+    y: 5
+    intros:
+      - "this square contains one (1) spoopy boi, who wears a cowl and smells slightly of rotting cabbage."
+      - "'what's the first letter of my game?! answer me, maggots!' he wails. you honk at him, but unfortunately the videotape is the same each time so he is unresponsive."
+    north: false
+    south: false
+    west: true
+    east: true
+  - name: "25 y - idk existential dread"
+    x: 5
+    y: 5
+    intros:
+      - "as you enter this square you are overcome with an intense existential angst. what are you doing in this maze?"
+      - "have you been placed here by some sort of avian higher power? are you merely the pawn in some infernal, incomprehensible cosmic game?"
+      - "what? who? where? When?"
+      - "there are walls to the south and east."
+    north: true
+    south: false
+    west: true
+    east: false
