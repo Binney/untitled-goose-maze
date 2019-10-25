@@ -54,29 +54,41 @@ locations:
 
   # Row 1: ..KILL..
 
-  - name: "3-1 k - ?"
+  - name: "3-1 k - grue"
     x: 3
     y: 1
     intros:
-      - "qq todo input"
+      - "this square is pitch black. you are somewhat worried there might be carnivores that inhabit dark places and feed on unwitting geese."
+      - "there are walls to the south and east."
     actions:
       - inputs:
-          - "qq"
+        - "honk"
         outputs:
-          - "qq output"
+          - "fortunately, you are a goose, and you're pretty sure those grues are more afraid of you than you are of them. you honk extremely loudly."
+          - "the chitter of terrified creatures recedes into the darkness. it sounds like they are saying 'kkkkkkkkkkkkkkk'."
     south: true 
     east: true
   
-  - name: "4-1 i - ?"
+  - name: "4-1 i - dan pete phil"
     x: 4
     y: 1
     intros:
-      - "qq todo input"
+      - "You enter what appears to be an office cafeteria. A sign on the wall to the west reads 'data connections'. There is another wall to the east."
+      - "Three thick-haired young men are crowded around a table, talking in hushed voices."
     actions:
       - inputs:
-          - "qq"
+        - "eavesdrop"
+        - "listen"
+        - "listen to men"
+        - "listen to dan"
+        - "listen to pete"
+        - "listen to phil"
+        - "listen to conversation"
         outputs:
-          - "qq output"
+        - "'So what could we call it then? O - Softwore?'"
+        - "'Sounds like a used clothing company. E - Softwere?'"
+        - "'Nah, makes us sound like have-beens. U - Softwure?'"
+        - "'I - I think there must be a right answer, but it's eluding me right now.'"
     south: true 
     west: true 
     east: true
@@ -110,60 +122,59 @@ locations:
 
   # Row 2: ..TWIN..
 
-  - name: "3-2 t - ?"
+  # alternative: I pity the foo'
+  - name: "3-2 t - sculpture of T"
     x: 3
     y: 2
     intros:
-      - "qq todo input"
-    actions:
-      - inputs:
-          - "qq"
-        outputs:
-          - "qq output"
+      - "there's a peculiar sculpture here, comprising a tall thin vertical trunk with a horizontal bar across the top."
+      - "there are walls to the east and north."
     north: true 
     south: true 
     east: true
   
-  - name: "4-2 i - ?"
+  - name: "4-2 w - ?"
     x: 4
     y: 2
     intros:
-      - "qq todo input"
-    actions:
-      - inputs:
-          - "qq"
-        outputs:
-          - "qq output"
+      - "qq todo"
     north: true 
     south: true 
     west: true 
     east: true
 
-  - name: "5-2 l - ?"
+  - name: "5-2 i - maffs"
     x: 5
     y: 2
     intros:
-      - "qq todo input"
-    actions:
-      - inputs:
-          - "qq"
-        outputs:
-          - "qq output"
+      - "the square root of minus one is also here. you wave and it nods politely before going back to its work."
     north: true 
     south: true 
     west: true 
     east: true
 
-  - name: "6-2 l - ?"
+  - name: "6-2 n - panto"
     x: 6
     y: 2
     intros:
-      - "qq todo input"
+      - "As you enter this next square, you remember you are tremendously hungry."
+      - "On any normal day you would go to the pond and bully the ducks for their lunch money, but all there seems to be here is a big table covered in fancy dress costumes and a heavy sheaf of paper."
+      - "Really tasty looking paper."
+      - "There are walls to the south and west, and you can hear someone yelling 'where the bloody hell is the script?'"
     actions:
       - inputs:
-          - "qq"
+        - "eat"
+        - "eat paper"
+        - "eat the paper"
+        - "eat the papers"
+        - "eat script"
+        - "eat pile of paper"
+        - "consume paper"
         outputs:
-          - "qq output"
+          - "You make quick work of the pile of papers, which could use a little seasoning. Just as you're about to polish off the final page a harassed-looking software developer hurries around a corner."
+          - "They stop in shock to see you munch one of the letters out of the final page:"
+          - "'softpa t 2019'"
+          - "You are chased out of the square by a mob of angry devs faster than you can say 'lincoln stone'."
     north: true 
     south: true 
     west: true
