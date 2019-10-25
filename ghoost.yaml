@@ -51,6 +51,9 @@ global:
       outputs:
         - "you pay respects"
 locations:
+
+  # Row 1: ..KILL..
+
   - name: "3-1 k - ?"
     x: 3
     y: 1
@@ -102,5 +105,65 @@ locations:
           - "qq"
         outputs:
           - "qq output"
+    south: true 
+    west: true
+
+  # Row 2: ..TWIN..
+
+  - name: "3-2 t - ?"
+    x: 3
+    y: 2
+    intros:
+      - "qq todo input"
+    actions:
+      - inputs:
+          - "qq"
+        outputs:
+          - "qq output"
+    north: true 
+    south: true 
+    east: true
+  
+  - name: "4-2 i - ?"
+    x: 4
+    y: 2
+    intros:
+      - "qq todo input"
+    actions:
+      - inputs:
+          - "qq"
+        outputs:
+          - "qq output"
+    north: true 
+    south: true 
+    west: true 
+    east: true
+
+  - name: "5-2 l - ?"
+    x: 5
+    y: 2
+    intros:
+      - "qq todo input"
+    actions:
+      - inputs:
+          - "qq"
+        outputs:
+          - "qq output"
+    north: true 
+    south: true 
+    west: true 
+    east: true
+
+  - name: "6-2 l - ?"
+    x: 6
+    y: 2
+    intros:
+      - "qq todo input"
+    actions:
+      - inputs:
+          - "qq"
+        outputs:
+          - "qq output"
+    north: true 
     south: true 
     west: true
