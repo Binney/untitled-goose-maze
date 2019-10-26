@@ -338,14 +338,14 @@ locations:
     west: true 
     east: true 
 
-  - name: "9-3 s - "
+  - name: "9-3 s - qq todo"
     x: 9
     y: 3
     intros:
       - "qq todo"
     actions:
       - inputs:
-        - "climb under veil"
+        - "qq todo"
         outputs:
           - "qq todo"
     south: true 
@@ -374,5 +374,127 @@ locations:
     west: true 
 
 # goose.BUSTERS
+
+  - name: "5-4 b - vengabus"
+    x: 5
+    y: 4
+    intros:
+      - "As you turn the corner, you find four flamboyantly dressed dutch men and women. They're all gathered round a garishly coloured Volkswagen Type 2."
+      - "'We gotta put some wheels in motion, but this thing's stalled! I think it must be out of tune; we need the right sound to kickstart it!'"
+      - "there are walls to the north and east."
+    actions:
+      - inputs:
+          - "honk"
+          - "honk honk"
+          - "toot"
+          - "toot toot"
+        outputs:
+          - "'Honk honk', the bus responds - and its wheels of steel start turning, as the speakers blast out the tune of the Vengabus."
+          - "The Vengaboys all fistbump you as they board their banterous bus, embarking down the boulevard with the boombox blasting out ballads."
+          - "You see the license plate: 'VEN4 [B]OY'"
+      - inputs:
+          - "boom"
+          - "boom boom"
+          - "boom boom boom boom"
+        outputs:
+          - "You toss a ping-pong ball into a plastic cup; the Vengaboys all drink. You're not being helpful."
+    north: true 
+    east: true 
+
+  - name: "6-4 u - ?"
+    x: 6
+    y: 4
+    intros:
+      - "qq todo"
+    actions:
+      - inputs:
+        - "qq todo"
+        outputs:
+          - "qq todo"
+    north: true 
+    east: true 
+
+  - name: "7-4 s - ?"
+    x: 7
+    y: 4
+    intros:
+      - "qq todo"
+    actions:
+      - inputs:
+        - "qq todo"
+        outputs:
+          - "qq todo"
+    north: true 
+    east: true 
+
+  - name: "8-4 t - ?"
+    x: 8
+    y: 4
+    intros:
+      - "qq todo"
+    actions:
+      - inputs:
+        - "qq todo"
+        outputs:
+          - "qq todo"
+    north: true 
+    east: true 
+
+  - name: "9-4 e - Cassette"
+    x: 9
+    y: 4
+    intros:
+      - "As you enter this room you spot a cassette tape on the floor. The handwritten label reads: 'untitled goose maze'."
+      - "There is a cassette player, and walls to the west and north."
+    actions:
+      - inputs:
+          - "examine cassette"
+          - "use cassette"
+          - "play cassette"
+          - "examine cassette tape"
+          - "use cassette tape"
+          - "play cassette tape"
+          - "examine tape"
+          - "use tape"
+          - "examine cassette player"
+          - "use cassette player"
+          - "examine player"
+          - "use player"
+          - "use cassette with player"
+          - "use cassette tape with player"
+          - "use tape with player"
+        outputs:
+          - "You pick up the cassette with your bill, pluck it into the cassette player, and hit 'play'."
+          - "The player emits a terrible screeching sound:"
+          - "'eeeeeeeeeeeeeeeeeee-e-e-e-e-e-e-e-eeee eeeeeeeeeeeeeeeeee-e-e-e-e-e-eeeeeeeeee eeeeeee'"
+          - "Why would anyone record such a dreadful tune? Even ecstasy couldn't help you enjoy that. You wish you were listening to chill-e saviour instead."
+    north: true 
+    east: true 
+
+  - name: "10-4 r - R"
+    x: 10
+    y: 4
+    intros:
+      - "You walk through the gate into a courtyard full of  TODO lol"
+    actions:
+      - inputs:
+        - "qq todo"
+        outputs:
+          - "qq todo"
+    north: true 
+    east: true 
+
+  - name: "11-4 s - ?"
+    x: 11
+    y: 4
+    intros:
+      - "qq todo"
+    actions:
+      - inputs:
+        - "qq todo"
+        outputs:
+          - "qq todo"
+    north: true 
+    east: true 
 
 # ....THE.wing.
