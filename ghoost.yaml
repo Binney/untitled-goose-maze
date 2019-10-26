@@ -217,6 +217,162 @@ locations:
 
 # .egg.SORCIST.
 
+  - name: "4-3 s - storeroom"
+    x: 4
+    y: 3
+    intros:
+      - "You push open the door and wander into a messy room full of junk and treasures. But mostly junk."
+      - "It's the 330 store room!"
+      - "It's just as you remembered, except there are now even more boxes labelled 'DO NOT THROW AWAY'"
+    actions:
+      - inputs:
+        - "examine boxes"
+        - "throw away boxes"
+        outputs:
+          - "Wasting no time, you use your almighty spectral beak to pull down and tear open the boxes."
+          - "What could be inside? Tax returns? Vat receipts? Stockpiles of cash for a rainy day?"
+          - "Peering inside, you see the boxes are full of letters. But they're all the same letter."
+          - "That letter is: 'S'" # todo: maybe 'sierra' / 'sugar' or summat?
+    north: true 
+    east: true
+
+  - name: "5-3 o - lincoln stone"
+    x: 5
+    y: 3
+    intros:
+      - "You walk into a small alcove, which is full of instruments."
+      - "Your tiny goose-ears (do geese have 'ears'?) are suddenly bombarded with a wave of sound. A singer is practising in here."
+      - ""
+    actions:
+      - inputs:
+        - "listen"
+        - "listen to singer"
+        - "listen to music"
+        - "listen to lincoln"
+        - "listen to lincoln stone"
+        - "lincoln stone"
+        outputs:
+          - "Why, it's only the ex-West End performer best known for his work in 'SoftPant 2016: A Christmas Carol' as Ebenezer Scrooge, Lincoln Stone!"
+          - "Captivated by his majestic voice, you try to listen to what he is singing:"
+          - "All'alba vincero!"
+          - "Vincera!"
+          - "Vincer[oooooooooooooo]!"
+          - "With that final syllable, your glasses crack. You weren't even wearing glasses. What a performance!"
+    south: true 
+    west: true 
+    east: true 
+
+  - name: "6-3 r - romcemberfest"
+    x: 6
+    y: 3
+    intros:
+      - "You have walked into some kind of seasonal party."
+      - "There are a few stray dogs, who appear to have been hired especially for the occasion."
+      - "Standing on a chair there is a robed figure - inebriated on some kind of foreign homebrew - who appears to be making a proclamation."
+      - "Suddenly, the room goes silent as the orator starts to point slowly around the room. They are about to make a decision."
+      - "The tension is palpable. Nobody dares distract the speaker as they make their final choice."
+    actions:
+      - inputs:
+        - "honk"
+        outputs:
+          - "HONK!"
+          - "Startled, everbody jumps; everybody, but the figure on the chair, who points are you."
+          - "'YOU! you shall be the new Romcemberking!'"
+          - "Of course, it is Romcemberfest! How could you forget! With great glee, you don the Romcemberking's robes."
+          - "On the back of the cape, there is a large [R]."
+          - "Swelling with pride, you make your first speech as the new romcemberking:"
+          - "HONK!"
+    south: true 
+    west: true 
+    east: true 
+
+  - name: "7-3 c - c#"
+    x: 7
+    y: 3
+    intros:
+      - "In the next room, there are some developers who are trying to ignore the noise from the party next-door."
+      - "They are trying to choose the the language for their next project."
+      - "'I'd like to use Java - it's reliable and straightforward.'"
+      - "'Java is terrible and so verbose! Can we use something more expressive, like javascript?'"
+      - "'I really like scal-'"
+      - "'Only if you want to die of old age before you finish compiling.'"
+      - "Things are getting heated in here. You decide to ajudicate. There is a keyboard attached to the computer they are gathered around."
+      - "You jump up to it and type:"
+    actions:
+      - inputs:
+        - "c"
+        - "c#"
+        - "c++"
+        outputs:
+          - "As soon as you press the [C] key everyone jumps and shouts:"
+          - "'A divine intervention! It has been proclaimed that C will be our language of choice!'"
+          - "You think about trying to add [#], but you're a horrible ghost goose, so you let them write their project in C."
+    south: true 
+    west: true 
+    east: true 
+
+  - name: "8-3 i - pod mac watch"
+    x: 8
+    y: 3
+    intros:
+      - "You walk onto a stage. There is a hip 30-something in jeans and a t-shirt giving a keynote speech."
+      - "'We revolutionised waterproofs by inventing the Mac.'"
+      - "'We revolutionised peas by inventing the Pod.'"
+      - "'We revolutionised time by inventing the Watch.'"
+      - "There is a large veil covering an item next to the speaker."
+    actions:
+      - inputs:
+        - "climb under veil"
+        - "veil"
+        - "pull veil"
+        - "use veil"
+        - "unveil"
+        outputs:
+          - "Quickly, you dive under the veil"
+          - "'There is but one thing left to revolutionise. Presenting, the i-...'"
+          - "The speaker pulls the veil. Instinctively, you scream your fiercest war cry:"
+          - "HONK!"
+          - "The speaker is stunned and falls over."
+          - "You don't know what the product beneath your feet is, but you know that it'll forever more be known as: the [i]-honk."
+    south: true 
+    west: true 
+    east: true 
+
+  - name: "9-3 s - "
+    x: 9
+    y: 3
+    intros:
+      - "qq todo"
+    actions:
+      - inputs:
+        - "climb under veil"
+        outputs:
+          - "qq todo"
+    south: true 
+    west: true 
+    east: true 
+
+  - name: "10-3 t - toblerone"
+    x: 10
+    y: 3
+    intros:
+      - "You appear to be inside a shrine. There are fountains trickling water from ceiling to floor."
+      - "Upon the alter there is a precious relic: a three-sided shape, made of chocolate."
+    actions:
+      - inputs:
+        - "triangle"
+        - "toblerone"
+        - "eat relic"
+        - "eat triangle"
+        - "eat toblerone"
+        - "eat"
+        outputs:
+          - "You jump onto the alter and gobble up the chocolately toblerone."
+          - "As you finish chomping its final corner, a monk walks out and, aghast at what has happened, shouts:"
+          - "'Ahh! What has happened to the Holy Tee!'"
+    south: true 
+    west: true 
+
 # goose.BUSTERS
 
 # ....THE.wing.
