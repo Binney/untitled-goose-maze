@@ -93,36 +93,58 @@ locations:
     west: true 
     east: true
 
-  - name: "5-1 l - ?"
+  - name: "5-1 l - Lego"
     x: 5
     y: 1
     intros:
-      - "qq todo input"
+      - "You enter a messy room. There are toys on the floor everywhere."
+      - "Beyond the mess you can see an alluring treasure chest."
     actions:
       - inputs:
-          - "qq"
+          - "examine toys"
+          - "examine chest"
+          - "examine treasure chest"
+          - "go to chest"
+          - "walk to chest"
         outputs:
-          - "qq output"
+          - "You take a few steps towards the gleaming treasure chest, hungry for the glittering prizes it doubtlessly has in store for you."
+          - "But as you take your final steps on your approach, you step on one of the toys, and it *hurts*."
+          - "You instinctively let out the worst curse word you know:"
+          - "**HONK!**"
+          - "What could cause so much pain? On inspection, it's some kind of toy bricks."
+          - "The offending article was a 2x4 brick, with two 2x2 bricks stacked on top."
+          - "You wonder what it looked like when it was standing upright."
     south: true 
     west: true 
     east: true
 
-  - name: "6-1 l - ?"
+  - name: "6-1 l - Ed Milliband"
     x: 6
     y: 1
     intros:
-      - "qq todo input"
+      - "You appear to be in a large grassy outdoor region."
+      - "Along the path you see a politician approaching with his two speechwriters."
     actions:
       - inputs:
-          - "qq"
+          - "examine politician"
+          - "talk to politician"
+          - "ed milliband"
+          - "milliband"
+          - "gareth"
+          - "#gareth"
         outputs:
-          - "qq output"
+          - "You waddle confidently up to the politician to quiz him on his plan for solving the bread crisis:"
+          - "'Honk?'"
+          - "Unfortunately, you are both a goose, and a ghost; both demographics which aren't big vote-winners for this particular politician, so he ignores you."
+          - "You follow him until he starts talking to a local software developer. Realising you are witnessing history unfold, you listen closely:"
+          - "'Hello, I'm Ed Milliband, from the labour party''"
+          - "They discuss house prices for a while, and then take an obligatory selfie, in which Ed Milliband performs his signature pose, 
+          where he makes the shape of his party name's first letter on his forehead."
     south: true 
     west: true
 
   # Row 2: ..TWIN..
 
-  # alternative: I pity the foo'
   - name: "3-2 t - sculpture of T"
     x: 3
     y: 2
@@ -133,11 +155,22 @@ locations:
     south: true 
     east: true
   
-  - name: "4-2 w - ?"
+  - name: "4-2 w - George Dubya Bush"
     x: 4
     y: 2
     intros:
-      - "qq todo"
+      - "There are some shrubberies here. You think you can hear some rustling."
+    actions:
+      - inputs:
+          - "examine shrubbery"
+          - "examine bush"
+        outputs:
+          - "You stride confiently up to the shrubbery and stick your apparitional beak in to investigate the source of the noise."
+          - "'Ow!'"
+          - "Just as you suspected - it's George Bush junior! Startled, he says to you:"
+          - "'I mis-underestimated you, ghosty-goose."
+          - "'Now, I know the human being and ghost-goose can co-exist peacefully, so I wish to *dub ya* with Honourary American Citizenship.'"
+          - "You try to thank him, but you struggle to remember: What's his middle name again?"
     north: true 
     south: true 
     west: true 
@@ -174,7 +207,7 @@ locations:
           - "You make quick work of the pile of papers, which could use a little seasoning. Just as you're about to polish off the final page a harassed-looking software developer hurries around a corner."
           - "They stop in shock to see you munch one of the letters out of the final page:"
           - "'softpa t 2019'"
-          - "You are chased out of the square by a mob of angry devs faster than you can say 'lincoln stone'."
+          - "You are chased out of the square by a mob of angry devs faster than you can say 'Ghyston'."
     north: true 
     south: true 
     west: true
