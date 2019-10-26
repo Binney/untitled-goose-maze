@@ -1,14 +1,17 @@
 # MAZE LAYOUT
 
-#   KILL
-#   TWIN
-#  SORCIST
-# BUSTERS
-#   THE
+#   123456789AB
+# .............
+# ..KILL.bill..
+# ..TWIN.beaks.
+# .egg.SORCIST.
+# goose.BUSTERS
+# ....THE.wing.
+# .............
 
 intro:
   startLocation:
-    x: 3
+    x: 1
     y: 1
   splashTitle:
     |
@@ -52,10 +55,10 @@ global:
         - "you pay respects"
 locations:
 
-  # Row 1: ..KILL..
+# ..KILL.bill..
 
-  - name: "3-1 k - grue"
-    x: 3
+  - name: "1-1 k - grue"
+    x: 1
     y: 1
     intros:
       - "this square is pitch black. you are somewhat worried there might be carnivores that inhabit dark places and feed on unwitting geese."
@@ -69,8 +72,8 @@ locations:
     south: true 
     east: true
   
-  - name: "4-1 i - dan pete phil"
-    x: 4
+  - name: "2-1 i - dan pete phil"
+    x: 2
     y: 1
     intros:
       - "You enter what appears to be an office cafeteria. A sign on the wall to the west reads 'data connections'. There is another wall to the east."
@@ -93,8 +96,8 @@ locations:
     west: true 
     east: true
 
-  - name: "5-1 l - Lego"
-    x: 5
+  - name: "3-1 l - Lego"
+    x: 3
     y: 1
     intros:
       - "You enter a messy room. There are toys on the floor everywhere."
@@ -118,8 +121,8 @@ locations:
     west: true 
     east: true
 
-  - name: "6-1 l - Ed Milliband"
-    x: 6
+  - name: "4-1 l - Ed Milliband"
+    x: 4
     y: 1
     intros:
       - "You appear to be in a large grassy outdoor region."
@@ -143,10 +146,10 @@ locations:
     south: true 
     west: true
 
-  # Row 2: ..TWIN..
+# ..TWIN.beaks.
 
-  - name: "3-2 t - sculpture of T"
-    x: 3
+  - name: "1-2 t - sculpture of T"
+    x: 1
     y: 2
     intros:
       - "there's a peculiar sculpture here, comprising a tall thin vertical trunk with a horizontal bar across the top."
@@ -155,8 +158,8 @@ locations:
     south: true 
     east: true
   
-  - name: "4-2 w - George Dubya Bush"
-    x: 4
+  - name: "2-2 w - George Dubya Bush"
+    x: 2
     y: 2
     intros:
       - "There are some shrubberies here. You think you can hear some rustling."
@@ -176,8 +179,8 @@ locations:
     west: true 
     east: true
 
-  - name: "5-2 i - maffs"
-    x: 5
+  - name: "3-2 i - maffs"
+    x: 3
     y: 2
     intros:
       - "the square root of minus one is also here. you wave and it nods politely before going back to its work."
@@ -186,8 +189,8 @@ locations:
     west: true 
     east: true
 
-  - name: "6-2 n - panto"
-    x: 6
+  - name: "4-2 n - panto"
+    x: 4
     y: 2
     intros:
       - "As you enter this next square, you remember you are tremendously hungry."
@@ -211,3 +214,9 @@ locations:
     north: true 
     south: true 
     west: true
+
+# .egg.SORCIST.
+
+# goose.BUSTERS
+
+# ....THE.wing.
