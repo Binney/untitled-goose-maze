@@ -42,7 +42,8 @@ intro:
     - "you are a ghost goose"
     - "a poltergoost, perhaps"
     - "you are stuck in a maze. the word softwire is printed on your stomach and this makes you unreasonably angry."
-    - "you instinctively start to follow the left wall, but the interview questions have recently been revamped, so instead of going forward, left and right your movement options are [[north]], [[south]], [[east]] or [[west]]."
+    - "you instinctively start to follow the left wall, but the interview questions have recently been revamped, so instead of going forward, 
+    left and right your movement options are [[north]] ([[n]]), [[south]] ([[s]]), [[east]] ([[e]]) or [[west]] ([[w]])."
     - "you can [[look]] around you, [[examine]] things, and perform other [[context-sensitive verbs]]"
 global:
   debug: true
