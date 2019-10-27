@@ -564,16 +564,18 @@ locations:
     east: true
     west: true
 
-  - name: "11-4 s - ?"
+  - name: "11-4 s - mailbox"
     x: 11
     y: 4
     intros:
-      - "qq todo"
+      - "you are at a crossroads. there is a small [[mailbox]] here."
     actions:
       - inputs:
-        - "qq todo"
+          - "open mailbox"
+          - "examine mailbox"
         outputs:
-          - "qq todo"
+          - "you open the mailbox with your bill. there is a letter in the mailbox."
+          - "that letter is: s"
     west: true
 
   - name: "3-5 t - The Seventh Honk"
