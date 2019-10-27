@@ -91,7 +91,6 @@ locations:
         - "'Sounds like a used clothing company. E - Softwere?'"
         - "'Nah, makes us sound like have-beens. U - Softwure?'"
         - "'I - I think there must be a right answer, but it's eluding me right now.'"
-    south: true
     west: true
     east: true
 
@@ -118,7 +117,6 @@ locations:
           You wonder what it looked like when it was standing upright."
     south: true
     west: true
-    east: true
 
   - name: "4-1 l - Ed Milliband"
     x: 4
@@ -143,18 +141,15 @@ locations:
           - "They discuss house prices for a while, and then take an obligatory selfie, in which Ed Milliband performs his signature pose,
           where he makes the shape of his party name's first letter on his forehead."
     south: true
-    west: true
 
 # ..TWIN.beaks.
 
-  - name: "1-2 t - sculpture of T"
+  - name: "1-2 t - sculpture of T todo this is pretty boring"
     x: 1
     y: 2
     intros:
       - "there's a peculiar sculpture here, comprising a tall thin vertical trunk with a horizontal bar across the top."
     north: true
-    south: true
-    east: true
 
   - name: "2-2 w - George Dubya Bush"
     x: 2
@@ -172,9 +167,6 @@ locations:
           - "'I mis-underestimated you, ghosty-goose."
           - "'Now, I know the human being and ghost-goose can co-exist peacefully, so I wish to *dub ya* with Honourary American Citizenship.'"
           - "You try to thank him, but you struggle to remember: What's his middle name again?"
-    north: true
-    south: true
-    west: true
     east: true
 
   - name: "3-2 i - maffs"
@@ -183,7 +175,6 @@ locations:
     intros:
       - "the square root of minus one is also here. you wave and it nods politely before going back to its work."
     north: true
-    south: true
     west: true
     east: true
 
@@ -282,7 +273,6 @@ locations:
           - "HONK!"
     south: true
     west: true
-    east: true
 
   - name: "7-3 c - c#"
     x: 7
@@ -306,7 +296,6 @@ locations:
           - "'A divine intervention! It has been proclaimed that C will be our language of choice!'"
           - "You think about trying to add [#], but you're a horrible ghost goose, so you let them write their project in C."
     south: true
-    west: true
     east: true
 
   - name: "8-3 i - pod mac watch"
@@ -332,7 +321,6 @@ locations:
           - "HONK!"
           - "The speaker is stunned and falls over."
           - "You don't know what the product beneath your feet is, but you know that it'll forever more be known as: the [i]-honk."
-    south: true
     west: true
     east: true
 
@@ -348,7 +336,6 @@ locations:
           - "qq todo"
     south: true
     west: true
-    east: true
 
   - name: "10-3 t - toblerone"
     x: 10
@@ -369,7 +356,6 @@ locations:
           - "As you finish chomping its final corner, a monk walks out and, aghast at what has happened, shouts:"
           - "'Ahh! What has happened to the Holy Tee!'"
     south: true
-    west: true
 
 # goose.BUSTERS
 
@@ -396,7 +382,6 @@ locations:
         outputs:
           - "You toss a ping-pong ball into a plastic cup; the Vengaboys all drink. You're not being helpful."
     north: true
-    east: true
     south: true
 
   - name: "6-4 u - ?"
@@ -423,6 +408,7 @@ locations:
         outputs:
           - "qq todo"
     north: true
+    west: true
     east: true
 
   - name: "8-4 t - ?"
@@ -435,8 +421,7 @@ locations:
         - "qq todo"
         outputs:
           - "qq todo"
-    north: true
-    east: true
+    west: true
 
   - name: "9-4 e - Cassette"
     x: 9
@@ -497,6 +482,7 @@ locations:
           - "Ah! You are correct! All I was missing was [r]!"
     north: true
     east: true
+    west: true
 
   - name: "11-4 s - ?"
     x: 11
@@ -546,7 +532,44 @@ locations:
           - "You tip over a binbag; beer bottles roll on the floor. With a sigh, the shadowy figure sets about tidying up."
           - "While the figure is distracted, you steal its scythe and hide it among the pool cues."
           - "The puzzled figure sets about looking for its scythe. You notice a [T] emblazoned on its cloak."
-    north: true
-    east: true
+    west: true
 
 # ....THE.wing.
+
+  - name: "3-5 t - ?"
+    x: 3
+    y: 5
+    intros:
+      - "qq todo"
+    actions:
+      - inputs:
+        - "qq todo"
+        outputs:
+          - "qq todo"
+    east: true
+
+  - name: "4-5 h - ?"
+    x: 4
+    y: 5
+    intros:
+      - "qq todo"
+    actions:
+      - inputs:
+        - "qq todo"
+        outputs:
+          - "qq todo"
+    east: true
+    west: true
+
+  - name: "5-5 e - ?"
+    x: 5
+    y: 5
+    intros:
+      - "qq todo"
+    actions:
+      - inputs:
+        - "qq todo"
+        outputs:
+          - "qq todo"
+    west: true
+    north: true
