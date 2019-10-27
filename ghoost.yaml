@@ -58,10 +58,6 @@ global:
         - "f"
       outputs:
         - "you pay respects"
-    - inputs:
-        - "banter"
-      outputs:
-        - "there's no time for that!"
 locations:
 
 # ..KILL.bill..
@@ -171,15 +167,16 @@ locations:
               At the far end there is a large mural with the following letters:"
           - "* I P"
           - "The first letter is obscured by some bracken."
-      - inputs:
-        - "clear bracken"
-        - "move bracken"
-        - "eat bracken"
-        outputs:
-          - "You carefully and respectfully reposition the bracken to clear the view of the letters"
-          - "[[T]] I P"
-          - "Suddenly, the letters light up in glowing fire. The room is full with the chorus of a hundred angels."
-          - "Then suddenly everything stops. The torches are extinquished. A small sign lights up, saying 'Please insert 1bitcoin to continue.' Bloody paywalls!"
+      # - inputs:
+      #   - "qq"
+      #   # - "move bracken"
+      #   # - "eat bracken"
+      #   outputs:
+      #     - "qqq"
+          # - "You carefully and respectfully reposition the bracken to clear the view of the letters"
+      #     - "[[T]] I P"
+      #     - "Suddenly, the letters light up in glowing fire. The room is full with the chorus of a hundred angels."
+      #     - "Then suddenly everything stops. The torches are extinquished. A small sign lights up, saying 'Please insert 1bitcoin to continue.' Bloody paywalls!"
     north: true
 
   - name: "2-2 w - George Dubya Bush"
