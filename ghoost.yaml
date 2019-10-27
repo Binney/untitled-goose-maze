@@ -39,9 +39,11 @@ intro:
     {light blue}.                 {orange}3..*//{light blue}"
   intros:
     - "you are a goose"
-    - "you are a goose in a maze. the word softwire is printed on your stomach and this makes you unreasonably angry."
-    - "you instinctively start to follow the left wall, but the graduate recruitment process has recently been revamped, so instead of going forward, left and right your movement options are [[north]], [[south]], [[east]] or [[west]]."
-    - "you can [[look]] around you"
+    - "you are a ghost goose"
+    - "a poltergoost, perhaps"
+    - "you are stuck in a maze. the word softwire is printed on your stomach and this makes you unreasonably angry."
+    - "you instinctively start to follow the left wall, but the interview questions have recently been revamped, so instead of going forward, left and right your movement options are [[north]], [[south]], [[east]] or [[west]]."
+    - "you can [[look]] around you, [[examine]] things, and perform other [[context-sensitive verbs]]"
 global:
   debug: true
   actions:
@@ -245,7 +247,7 @@ locations:
           - "Captivated by his majestic voice, you try to listen to what he is singing:"
           - "All'alba vincero!"
           - "Vincera!"
-          - "Vincer[oooooooooooooo]!"
+          - "Vincer[[oooooooooooooo]]!"
           - "With that final syllable, your glasses crack. You weren't even wearing glasses. What a performance!"
     south: true
     west: true
@@ -268,7 +270,7 @@ locations:
           - "Startled, everbody jumps; everybody, but the figure on the chair, who points are you."
           - "'YOU! you shall be the new Romcemberking!'"
           - "Of course, it is Romcemberfest! How could you forget! With great glee, you don the Romcemberking's robes."
-          - "On the back of the cape, there is a large [R]."
+          - "On the back of the cape, there is a large [[R]]."
           - "Swelling with pride, you make your first speech as the new romcemberking:"
           - "HONK!"
     south: true
@@ -292,9 +294,9 @@ locations:
         - "c#"
         - "c++"
         outputs:
-          - "As soon as you press the [C] key everyone jumps and shouts:"
+          - "As soon as you press the [[C]] key everyone jumps and shouts:"
           - "'A divine intervention! It has been proclaimed that C will be our language of choice!'"
-          - "You think about trying to add [#], but you're a horrible ghost goose, so you let them write their project in C."
+          - "You think about trying to add [[#]], but you're a horrible ghost goose, so you let them write their project in C."
     south: true
     east: true
 
@@ -320,7 +322,7 @@ locations:
           - "The speaker pulls the veil. Instinctively, you scream your fiercest war cry:"
           - "HONK!"
           - "The speaker is stunned and falls over."
-          - "You don't know what the product beneath your feet is, but you know that it'll forever more be known as: the [i]-honk."
+          - "You don't know what the product beneath your feet is, but you know that it'll forever more be known as: the [[i]]-honk."
     west: true
     east: true
 
@@ -346,7 +348,7 @@ locations:
           You launch your neck into the clear water to reach the apples, but as soon as you are submerged they disappear.
           In all directions you can see stars; you trace them into a constellation - it's a familiar shape but you don't
           think it's one of the traditional constellations. Is that... Bob? Bob Chen?"
-          - "Bob nods and smiles at you. He re-arranged himself into Serpens, a perfect [S] shape, and disappears."
+          - "Bob nods and smiles at you. He re-arranged himself into Serpens, a perfect [[S]] shape, and disappears."
           - "You lift your head out of the water, and vow never to bob for apples in strage cauldrons again."
     south: true
     west: true
@@ -388,7 +390,7 @@ locations:
         outputs:
           - "'Honk honk', the bus responds - and its wheels of steel start turning, as the speakers blast out the tune of the Vengabus."
           - "The Vengaboys all fistbump you as they board their banterous bus, embarking down the boulevard with the boombox blasting out ballads."
-          - "You see the license plate: 'VEN4 [B]OY'"
+          - "You see the license plate: 'VEN4 [[B]]OY'"
       - inputs:
           - "boom"
           - "boom boom"
@@ -425,10 +427,10 @@ locations:
       - inputs:
         - "fight"
         outputs:
-          - "You put on your game face and prepare your ultimate attack: [HONK BEAM]."
+          - "You put on your game face and prepare your ultimate attack: [[HONK BEAM]]."
           - "The level 5 metapod is vapourised. Ain't no pokecentre able to heal that mess."
-          - "Distraught, the bug-catcher ripostes: 'You think that's it? Pikach[u] I chose [yoooou]!'"
-          - "She slams down a pokemon. A pikachu fall out, fast asleep. 'Pika-[chuuuuu]zzzz...'"
+          - "Distraught, the bug-catcher ripostes: 'You think that's it? Pikach[[u]] I chose [[yoooou]]!'"
+          - "She slams down a pokemon. A pikachu fall out, fast asleep. 'Pika-[[chuuuuu]]zzzz...'"
     north: true
     east: true
 
@@ -438,10 +440,10 @@ locations:
     intros:
       - "You are in an office. It is 1998, the peak of our civilisation."
       - "There is a man in a long trenchcoat, sitting at a computer terminal. He spins around on his wheely-chair and says:"
-      - "'Hello, goose. This is your last chance. After this, there is no turning back. You take the [blue pill], you wake up
-         in your lovely village and the story ends; you take the [red pill], you stay in wonderland and I show you how deep
+      - "'Hello, goose. This is your last chance. After this, there is no turning back. You take the [[blue pill]], you wake up
+         in your lovely village and the story ends; you take the [[red pill]], you stay in wonderland and I show you how deep
          the rabbithole goes.''"
-      - "He holds his hand out to you, both pill in his palm."
+      - "He holds his hand out to you, both pills in his palm."
     actions:
       - inputs:
         - "red"
@@ -450,6 +452,7 @@ locations:
         - "eat red pill"
         outputs:
           - "You could eat the red pill, but the blue one looks so tasty!"
+          - "He holds his hand out to you, both pills in his palm."
       - inputs:
         - "blue"
         - "blue pill"
@@ -457,6 +460,7 @@ locations:
         - "eat blue pill"
         outputs:
           - "You could eat the blue pill, but the red one looks so tasty!"
+          - "He holds his hand out to you, both pills in his palm."
       - inputs:
         - "both"
         - "both pills"
@@ -469,7 +473,7 @@ locations:
           - "The man in the trenchcoat starts screaming and writhing: 'What have you done? Why?' He starts to melt into green characters."
           - "A woman in black leather bursts into the room on a motorbike: 'Oh no! Morpheus, what happened to you?
           Are you okay?'"
-          - "'MORPHY-[ESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS]!'"
+          - "'MORPHY-[[ESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS]]!'"
     north: true
     west: true
     east: true
@@ -558,7 +562,7 @@ locations:
         - "solve"
         - "solve equation"
         outputs:
-          - "'Ah! You are correct! All I was missing was [r]! Eureka!''"
+          - "'Ah! You are correct! All I was missing was [[r]]! Eureka!''"
           - "You realise you haven't showered in several thousand years."
     north: true
     east: true
@@ -605,14 +609,14 @@ locations:
           - "'Ah, a wager for your immortal soul! But I must warn you, I am rather good.'"
           - "The cloaked figure plays skillfully; but you quickly get the knack of the game as well."
           - "The figure hits all of your cups; but after the last one, you deftly rebut. Then, you hit the figure's final cup twice. You have won."
-          - "'We shall meet again, goose,' the figure says with a wry smile. It turns round and walks away; you notice a [T] emblazoned on its dark cloak."
+          - "'We shall meet again, goose,' the figure says with a wry smile. It turns round and walks away; you notice a [[T]] emblazoned on its dark cloak."
       - inputs:
           - "take scythe"
           - "steal scythe"
         outputs:
           - "You tip over a binbag; beer bottles roll on the floor. With a sigh, the shadowy figure sets about tidying up."
           - "While the figure is distracted, you steal its scythe and hide it among the pool cues."
-          - "The puzzled figure sets about looking for its scythe. You notice a [T] emblazoned on its cloak."
+          - "The puzzled figure sets about looking for its scythe. You notice a [[T]] emblazoned on its cloak."
     east: true
 
   - name: "4-5 h - Hugo"
