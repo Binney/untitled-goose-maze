@@ -17,7 +17,7 @@ class CodeBlock {
 class Intro extends CodeBlock {
   constructor(doc) {
     super();
-    this.prefix = "";
+    this.prefix = 10;
     this.splashTitle = doc.splashTitle;
     this.petsciiArt= doc.petsciiArt;
     this.intros = doc.intros;
@@ -33,7 +33,7 @@ class Intro extends CodeBlock {
     this.generateSplashTitleCode(this.splashTitle);
     this.generatePetsciiArtCode(this.petsciiArt);
     this.intros.forEach(intro => this.generateIntroCode(intro));
-    this.addNewLine(this.getNextIndex(), `GOTO ${Location.buildPrefix(this.startLocationX, this.startLocationY)}000`);
+    this.addNewLine(this.getNextIndex(), `GOTO ${Location.getLineFor(this.startLocationX, this.startLocationY)}`);
   }
 
   generateSplashTitleCode(splashTitle) {
@@ -68,7 +68,7 @@ class Location extends CodeBlock {
     super();
     this.x = doc.x;
     this.y = doc.y;
-    this.prefix = Location.buildPrefix(this.x, this.y);
+    this.prefix = Location.getLineFor(this.x, this.y);
     this.name = doc.name;
     this.intros = doc.intros;
     this.actions = (doc.actions || []).concat(globalDoc.actions);
@@ -101,25 +101,25 @@ class Location extends CodeBlock {
     this.addNewLine(this.getNextInputIndex(), `IF C$ = "look" GOTO ${startLine.number};`);
 
     if (this.west) {
-      this.addNewLine(this.getNextInputIndex(), `IF C$ = "west" OR C$ = "go west" GOTO ${Location.buildPrefix(this.x - 1, this.y)}000;`);
+      this.addNewLine(this.getNextInputIndex(), `IF C$ = "west" OR C$ = "go west" GOTO ${Location.getLineFor(this.x - 1, this.y)};`);
     } else {
       this.addNewLine(this.getNextInputIndex(), `IF C$ = "west" OR C$ = "go west" GOTO ${bonkLine.number};`);
     }
 
     if (this.east) {
-      this.addNewLine(this.getNextInputIndex(), `IF C$ = "east" OR C$ = "go east" GOTO ${Location.buildPrefix(this.x + 1, this.y)}000;`);
+      this.addNewLine(this.getNextInputIndex(), `IF C$ = "east" OR C$ = "go east" GOTO ${Location.getLineFor(this.x + 1, this.y)};`);
     } else {
       this.addNewLine(this.getNextInputIndex(), `IF C$ = "east" OR C$ = "go east" GOTO ${bonkLine.number};`);
     }
 
     if (this.north) {
-      this.addNewLine(this.getNextInputIndex(), `IF C$ = "north" OR C$ = "go north" GOTO ${Location.buildPrefix(this.x, this.y - 1)}000;`);
+      this.addNewLine(this.getNextInputIndex(), `IF C$ = "north" OR C$ = "go north" GOTO ${Location.getLineFor(this.x, this.y - 1)};`);
     } else {
       this.addNewLine(this.getNextInputIndex(), `IF C$ = "north" OR C$ = "go north" GOTO ${bonkLine.number};`);
     }
 
     if (this.south) {
-      this.addNewLine(this.getNextInputIndex(), `IF C$ = "south" OR C$ = "go south" GOTO ${Location.buildPrefix(this.x, this.y + 1)}000;`);
+      this.addNewLine(this.getNextInputIndex(), `IF C$ = "south" OR C$ = "go south" GOTO ${Location.getLineFor(this.x, this.y + 1)};`);
     } else {
       this.addNewLine(this.getNextInputIndex(), `IF C$ = "south" OR C$ = "go south" GOTO ${bonkLine.number};`);
     }
@@ -162,8 +162,10 @@ class Location extends CodeBlock {
     return index;
   }
 
-  static buildPrefix(x, y) {
-    return x.toString() + y.toString();
+  // This assumes that we want more x coordinates than y coordinates.
+  // If not these can easily be swapped.
+  static getLineFor(x, y) {
+    return y * 10000 + x * 500;
   }
 }
 
@@ -178,14 +180,11 @@ class Line {
   }
 
   static lineNumber(prefix, index) {
-    if (prefix.length > 0) {
-      return prefix + Line.padWithZeroes(index, 3);
-    } else {
-      return index.toString();
-    }
+    const line = (prefix + index).toString();
+    return this.leftPadWithZeroes(line, 5);
   }
 
-  static padWithZeroes(number, length) {
+  static leftPadWithZeroes(number, length) {
     let string = number.toString();
     while (string.length < length) {
       string = "0" + string;
