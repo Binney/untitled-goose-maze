@@ -12,7 +12,7 @@
 intro:
   startLocation:
     x: 5
-    y: 5
+    y: 3
   splashTitle:
     |
     {light blue}. {orange}WQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQ
@@ -496,8 +496,8 @@ locations:
           - "qq todo"
     west: true
 
-  - name: "5-5 t - The Seventh Honk"
-    x: 5
+  - name: "3-5 t - The Seventh Honk"
+    x: 3
     y: 5
     intros:
       - "The room you enter is a desolate sight: puddles on the floor, bins overflowing, empty beer cans strewn everywhere. The chillout after a Friday-night event."
@@ -531,20 +531,6 @@ locations:
           - "You tip over a binbag; beer bottles roll on the floor. With a sigh, the shadowy figure sets about tidying up."
           - "While the figure is distracted, you steal its scythe and hide it among the pool cues."
           - "The puzzled figure sets about looking for its scythe. You notice a [T] emblazoned on its cloak."
-    west: true
-
-# ....THE.wing.
-
-  - name: "3-5 t - ?"
-    x: 3
-    y: 5
-    intros:
-      - "qq todo"
-    actions:
-      - inputs:
-        - "qq todo"
-        outputs:
-          - "qq todo"
     east: true
 
   - name: "4-5 h - ?"
