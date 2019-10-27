@@ -45,6 +45,7 @@ intro:
     - "you instinctively start to follow the left wall, but the interview questions have recently been revamped, so instead of going forward, 
     left and right your movement options are [[north]] ([[n]]), [[south]] ([[s]]), [[east]] ([[e]]) or [[west]] ([[w]])."
     - "you can [[look]] around you, [[examine]] things, and perform other [[context-sensitive verbs]]"
+    - "oh, and..."
     - "you can also [[honk]]"
 global:
   debug: true
@@ -57,6 +58,10 @@ global:
         - "f"
       outputs:
         - "you pay respects"
+    - inputs:
+        - "banter"
+      outputs:
+        - "there's no time for that!"
 locations:
 
 # ..KILL.bill..
@@ -148,11 +153,33 @@ locations:
 
 # ..TWIN.beaks.
 
-  - name: "1-2 t - sculpture of T todo this is pretty boring"
+  - name: "1-2 t - graveyard"
     x: 1
     y: 2
     intros:
-      - "there's a peculiar sculpture here, comprising a tall thin vertical trunk with a horizontal bar across the top."
+      - "You are in a graveyard. There are many gravestones in varying states of decay."
+      - "There is a mausoleum."
+    actions:
+      - inputs:
+        - "enter mausoleum"
+        - "mausoleum"
+        - "go to mausoleum"
+        - "go in mausoleum"
+        - "go inside mausoleum"
+        outputs:
+          - "You waddle into the mausoleum. Inside it is lit with eternally-burning torches (who pays for that?)
+              At the far end there is a large mural with the following letters:"
+          - "* I P"
+          - "The first letter is obscured by some bracken."
+      - inputs:
+        - "clear bracken"
+        - "move bracken"
+        - "eat bracken"
+        outputs:
+          - "You carefully and respectfully reposition the bracken to clear the view of the letters"
+          - "[[T]] I P"
+          - "Suddenly, the letters light up in glowing fire. The room is full with the chorus of a hundred angels."
+          - "Then suddenly everything stops. The torches are extinquished. A small sign lights up, saying 'Please insert 1bitcoin to continue.' Bloody paywalls!"
     north: true
 
   - name: "2-2 w - George Dubya Bush"
