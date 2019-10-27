@@ -494,8 +494,7 @@ locations:
         - "qq todo"
         outputs:
           - "qq todo"
-    north: true
-    east: true
+    west: true
 
   - name: "5-5 t - The Seventh Honk"
     x: 5
