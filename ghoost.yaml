@@ -62,7 +62,6 @@ locations:
     y: 1
     intros:
       - "this square is pitch black. you are somewhat worried there might be carnivores that inhabit dark places and feed on unwitting geese."
-      - "there are walls to the south and east."
     actions:
       - inputs:
         - "honk"
@@ -153,7 +152,6 @@ locations:
     y: 2
     intros:
       - "there's a peculiar sculpture here, comprising a tall thin vertical trunk with a horizontal bar across the top."
-      - "there are walls to the east and north."
     north: true 
     south: true 
     east: true
@@ -196,7 +194,7 @@ locations:
       - "As you enter this next square, you remember you are tremendously hungry."
       - "On any normal day you would go to the pond and bully the ducks for their lunch money, but all there seems to be here is a big table covered in fancy dress costumes and a heavy sheaf of paper."
       - "Really tasty looking paper."
-      - "There are walls to the south and west, and you can hear someone yelling 'where the bloody hell is the script?'"
+      - "You can hear someone yelling 'where the bloody hell is the script?'"
     actions:
       - inputs:
         - "eat"
@@ -381,7 +379,6 @@ locations:
     intros:
       - "As you turn the corner, you find four flamboyantly dressed dutch men and women. They're all gathered round a garishly coloured Volkswagen Type 2."
       - "'We gotta put some wheels in motion, but this thing's stalled! I think it must be out of tune; we need the right sound to kickstart it!'"
-      - "there are walls to the north and east."
     actions:
       - inputs:
           - "honk"
