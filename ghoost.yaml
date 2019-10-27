@@ -324,16 +324,30 @@ locations:
     west: true
     east: true
 
-  - name: "9-3 s - qq todo"
+  - name: "9-3 s - Bob Chen but underwater in a cauldren look I just made this one up okay"
     x: 9
     y: 3
     intros:
-      - "qq todo"
+      - "You are in a dark forest. The moonlight is dappled between the veins of foliage. The wind gently hums between the trees."
+      - "There is a cauldren."
     actions:
       - inputs:
-        - "qq todo"
+        - "examine cauldren"
+        - "look at cauldren"
+        - "cauldren"
         outputs:
-          - "qq todo"
+          - "You peek your beak over the rim of the cauldren: it's full of apples! They are glowing in the crystal-clear water."
+      - inputs:
+        - "bob for apples"
+        - "bob"
+        - "eat apples"
+        outputs:
+          - "Bobbing for apples, what a wonderful idea!
+          You launch your neck into the clear water to reach the apples, but as soon as you are submerged they disappear.
+          In all directions you can see stars; you trace them into a constellation - it's a familiar shape but you don't
+          think it's one of the traditional constellations. Is that... Bob? Bob Chen?"
+          - "Bob nods and smiles at you. He re-arranged himself into Serpens, a perfect [S] shape, and disappears."
+          - "You lift your head out of the water, and vow never to bob for apples in strage cauldrens again."
     south: true
     west: true
 
@@ -411,17 +425,33 @@ locations:
     west: true
     east: true
 
-  - name: "8-4 t - ?"
+  - name: "8-4 t - Tofu"
     x: 8
     y: 4
     intros:
-      - "qq todo"
+      - "You are in a noisy room. There are people playing pool and table tennis. The words 'Kentish Canteen'
+      are on the wall, next to a tablet."
     actions:
       - inputs:
-        - "qq todo"
+        - "use tablet"
         outputs:
-          - "qq todo"
-    west: true
+          - "The tablet says 'Please press your name to collect your lunch'.
+          There are two buttons:"
+          - "- Catalin"
+          - "- Goose"
+      - inputs:
+        - "press goose"
+        - "goose"
+        outputs:
+          - "The tablet says 'You ordered: Kentish Fried ofu'.
+          You receive a plate of ofu. It is delicious, but it's missing something..."
+      - inputs:
+        - "press catalin"
+        - "catalin"
+        outputs:
+          - "The tablet says 'You ordered: Something Really Spicy'.
+          Just looking at it makes your eyes water. You put it in the bin."
+    west: true 
 
   - name: "9-4 e - Cassette"
     x: 9
@@ -479,7 +509,8 @@ locations:
         - "solve"
         - "solve equation"
         outputs:
-          - "Ah! You are correct! All I was missing was [r]!"
+          - "'Ah! You are correct! All I was missing was [r]! Eureka!''"
+          - "You realise you haven't showered in several thousand years."
     north: true
     east: true
     west: true
