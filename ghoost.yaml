@@ -11,8 +11,8 @@
 
 intro:
   startLocation:
-    x: 1
-    y: 1
+    x: 5
+    y: 5
   splashTitle:
     |
     {light blue}. {orange}WQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQ
@@ -68,9 +68,9 @@ locations:
         outputs:
           - "fortunately, you are a goose, and you're pretty sure those grues are more afraid of you than you are of them. you honk extremely loudly."
           - "the chitter of terrified creatures recedes into the darkness. it sounds like they are saying 'kkkkkkkkkkkkkkk'."
-    south: true 
+    south: true
     east: true
-  
+
   - name: "2-1 i - dan pete phil"
     x: 2
     y: 1
@@ -91,8 +91,8 @@ locations:
         - "'Sounds like a used clothing company. E - Softwere?'"
         - "'Nah, makes us sound like have-beens. U - Softwure?'"
         - "'I - I think there must be a right answer, but it's eluding me right now.'"
-    south: true 
-    west: true 
+    south: true
+    west: true
     east: true
 
   - name: "3-1 l - Lego"
@@ -116,8 +116,8 @@ locations:
           - "What could cause so much pain? On inspection, it's some kind of toy bricks."
           - "The offending article was a 2x4 brick, with two 2x2 bricks stacked on top on one side.
           You wonder what it looked like when it was standing upright."
-    south: true 
-    west: true 
+    south: true
+    west: true
     east: true
 
   - name: "4-1 l - Ed Milliband"
@@ -140,9 +140,9 @@ locations:
           - "Unfortunately, you are both a goose, and a ghost; both demographics which aren't big vote-winners for this particular politician, so he ignores you."
           - "You follow him until he starts talking to a local software developer. Realising you are witnessing history unfold, you listen closely:"
           - "'Hello, I'm Ed Milliband, from the labour party''"
-          - "They discuss house prices for a while, and then take an obligatory selfie, in which Ed Milliband performs his signature pose, 
+          - "They discuss house prices for a while, and then take an obligatory selfie, in which Ed Milliband performs his signature pose,
           where he makes the shape of his party name's first letter on his forehead."
-    south: true 
+    south: true
     west: true
 
 # ..TWIN.beaks.
@@ -152,10 +152,10 @@ locations:
     y: 2
     intros:
       - "there's a peculiar sculpture here, comprising a tall thin vertical trunk with a horizontal bar across the top."
-    north: true 
-    south: true 
+    north: true
+    south: true
     east: true
-  
+
   - name: "2-2 w - George Dubya Bush"
     x: 2
     y: 2
@@ -172,9 +172,9 @@ locations:
           - "'I mis-underestimated you, ghosty-goose."
           - "'Now, I know the human being and ghost-goose can co-exist peacefully, so I wish to *dub ya* with Honourary American Citizenship.'"
           - "You try to thank him, but you struggle to remember: What's his middle name again?"
-    north: true 
-    south: true 
-    west: true 
+    north: true
+    south: true
+    west: true
     east: true
 
   - name: "3-2 i - maffs"
@@ -182,9 +182,9 @@ locations:
     y: 2
     intros:
       - "the square root of minus one is also here. you wave and it nods politely before going back to its work."
-    north: true 
-    south: true 
-    west: true 
+    north: true
+    south: true
+    west: true
     east: true
 
   - name: "4-2 n - panto"
@@ -209,8 +209,8 @@ locations:
           - "They stop in shock to see you munch one of the letters out of the final page:"
           - "'softpa t 2019'"
           - "You are chased out of the square by a mob of angry devs faster than you can say 'Ghyston'."
-    north: true 
-    south: true 
+    north: true
+    south: true
     west: true
 
 # .egg.SORCIST.
@@ -231,7 +231,7 @@ locations:
           - "What could be inside? Tax returns? Vat receipts? Stockpiles of cash for a rainy day?"
           - "Peering inside, you see the boxes are full of letters. But they're all the same letter."
           - "That letter is: 'S'" # todo: maybe 'sierra' / 'sugar' or summat?
-    north: true 
+    north: true
     east: true
 
   - name: "5-3 o - lincoln stone"
@@ -256,9 +256,9 @@ locations:
           - "Vincera!"
           - "Vincer[oooooooooooooo]!"
           - "With that final syllable, your glasses crack. You weren't even wearing glasses. What a performance!"
-    south: true 
-    west: true 
-    east: true 
+    south: true
+    west: true
+    east: true
 
   - name: "6-3 r - romcemberfest"
     x: 6
@@ -280,9 +280,9 @@ locations:
           - "On the back of the cape, there is a large [R]."
           - "Swelling with pride, you make your first speech as the new romcemberking:"
           - "HONK!"
-    south: true 
-    west: true 
-    east: true 
+    south: true
+    west: true
+    east: true
 
   - name: "7-3 c - c#"
     x: 7
@@ -305,9 +305,9 @@ locations:
           - "As soon as you press the [C] key everyone jumps and shouts:"
           - "'A divine intervention! It has been proclaimed that C will be our language of choice!'"
           - "You think about trying to add [#], but you're a horrible ghost goose, so you let them write their project in C."
-    south: true 
-    west: true 
-    east: true 
+    south: true
+    west: true
+    east: true
 
   - name: "8-3 i - pod mac watch"
     x: 8
@@ -332,9 +332,9 @@ locations:
           - "HONK!"
           - "The speaker is stunned and falls over."
           - "You don't know what the product beneath your feet is, but you know that it'll forever more be known as: the [i]-honk."
-    south: true 
-    west: true 
-    east: true 
+    south: true
+    west: true
+    east: true
 
   - name: "9-3 s - qq todo"
     x: 9
@@ -346,9 +346,9 @@ locations:
         - "qq todo"
         outputs:
           - "qq todo"
-    south: true 
-    west: true 
-    east: true 
+    south: true
+    west: true
+    east: true
 
   - name: "10-3 t - toblerone"
     x: 10
@@ -368,8 +368,8 @@ locations:
           - "You jump onto the alter and gobble up the chocolately toblerone."
           - "As you finish chomping its final corner, a monk walks out and, aghast at what has happened, shouts:"
           - "'Ahh! What has happened to the Holy Tee!'"
-    south: true 
-    west: true 
+    south: true
+    west: true
 
 # goose.BUSTERS
 
@@ -395,8 +395,9 @@ locations:
           - "boom boom boom boom"
         outputs:
           - "You toss a ping-pong ball into a plastic cup; the Vengaboys all drink. You're not being helpful."
-    north: true 
-    east: true 
+    north: true
+    east: true
+    south: true
 
   - name: "6-4 u - ?"
     x: 6
@@ -408,8 +409,8 @@ locations:
         - "qq todo"
         outputs:
           - "qq todo"
-    north: true 
-    east: true 
+    north: true
+    east: true
 
   - name: "7-4 s - ?"
     x: 7
@@ -421,8 +422,8 @@ locations:
         - "qq todo"
         outputs:
           - "qq todo"
-    north: true 
-    east: true 
+    north: true
+    east: true
 
   - name: "8-4 t - ?"
     x: 8
@@ -434,8 +435,8 @@ locations:
         - "qq todo"
         outputs:
           - "qq todo"
-    north: true 
-    east: true 
+    north: true
+    east: true
 
   - name: "9-4 e - Cassette"
     x: 9
@@ -465,8 +466,8 @@ locations:
           - "The player emits a terrible screeching sound:"
           - "'eeeeeeeeeeeeeeeeeee-e-e-e-e-e-e-e-eeee eeeeeeeeeeeeeeeeee-e-e-e-e-e-eeeeeeeeee eeeeeee'"
           - "Why would anyone record such a dreadful tune? Even ecstasy couldn't help you enjoy that. You wish you were listening to chill-e saviour instead."
-    north: true 
-    east: true 
+    north: true
+    east: true
 
   - name: "10-4 r - pi r squared"
     x: 10
@@ -494,8 +495,8 @@ locations:
         - "solve equation"
         outputs:
           - "Ah! You are correct! All I was missing was [r]!"
-    north: true 
-    east: true 
+    north: true
+    east: true
 
   - name: "11-4 s - ?"
     x: 11
@@ -507,7 +508,45 @@ locations:
         - "qq todo"
         outputs:
           - "qq todo"
-    north: true 
-    east: true 
+    north: true
+    east: true
+
+  - name: "5-5 t - The Seventh Honk"
+    x: 5
+    y: 5
+    intros:
+      - "The room you enter is a desolate sight: puddles on the floor, bins overflowing, empty beer cans strewn everywhere. The chillout after a Friday-night event."
+      - "At first, you think there is no one else there; but then, in a corner, you notice a shadowy figure wearing a black cloak. It turns towards you."
+      - "The pale-faced figure speaks: 'Goose, I have come for you; your hour is up.' Its scythe flashes in the dim light."
+      - "Between you and the figure is a table; on it there is a stack of cups, some ping-pong balls, and some cans of beer."
+    actions:
+      - inputs:
+          - "play beer pong"
+          - "beer pong"
+          - "play"
+          - "use cups"
+          - "use ping-pong balls"
+          - "use ping-pong ball"
+          - "use balls"
+          - "use ball"
+          - "use beers"
+          - "use beer"
+          - "use cans of beer"
+          - "use can of beer"
+        outputs:
+          - "You arrange 10 cups in a triangle, and pour out two cans of beer."
+          - "'Ah, a wager for your immortal soul! But I must warn you, I am rather good.'"
+          - "The cloaked figure plays skillfully; but you quickly get the knack of the game as well."
+          - "The figure hits all of your cups; but after the last one, you deftly rebut. Then, you hit the figure's final cup twice. You have won."
+          - "'We shall meet again, goose,' the figure says with a wry smile. It turns round and walks away; you notice a [T] emblazoned on its dark cloak."
+      - inputs:
+          - "take scythe"
+          - "steal scythe"
+        outputs:
+          - "You tip over a binbag; beer bottles roll on the floor. With a sigh, the shadowy figure sets about tidying up."
+          - "While the figure is distracted, you steal its scythe and hide it among the pool cues."
+          - "The puzzled figure sets about looking for its scythe. You notice a [T] emblazoned on its cloak."
+    north: true
+    east: true
 
 # ....THE.wing.
