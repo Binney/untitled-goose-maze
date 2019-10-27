@@ -167,12 +167,12 @@ locations:
               At the far end there is a large mural with the following letters:"
           - "* I P"
           - "The first letter is obscured by some bracken."
-      # - inputs:
-      #   - "qq"
-      #   # - "move bracken"
-      #   # - "eat bracken"
-      #   outputs:
-      #     - "qqq"
+      - inputs:
+        - "qq"
+        # - "move bracken"
+        # - "eat bracken"
+        outputs:
+          - "qqq"
           # - "You carefully and respectfully reposition the bracken to clear the view of the letters"
       #     - "[[T]] I P"
       #     - "Suddenly, the letters light up in glowing fire. The room is full with the chorus of a hundred angels."
