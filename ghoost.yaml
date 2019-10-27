@@ -110,13 +110,13 @@ locations:
           - "go to chest"
           - "walk to chest"
         outputs:
-          - "You take a few steps towards the gleaming treasure chest, hungry for the glittering prizes it doubtlessly has in store for you."
-          - "But as you take your final steps on your approach, you step on one of the toys, and it *hurts*."
+          - "You take a few steps towards the gleaming treasure chest, hungry for the glittering prizes it doubtlessly has in store for you.
+            But as you take your final steps on your approach, you step on one of the toys, and it *hurts*."
           - "You instinctively let out the worst curse word you know:"
           - "**HONK!**"
           - "What could cause so much pain? On inspection, it's some kind of toy bricks."
-          - "The offending article was a 2x4 brick, with two 2x2 bricks stacked on top."
-          - "You wonder what it looked like when it was standing upright."
+          - "The offending article was a 2x4 brick, with two 2x2 bricks stacked on top on one side.
+          You wonder what it looked like when it was standing upright."
     south: true 
     west: true 
     east: true
