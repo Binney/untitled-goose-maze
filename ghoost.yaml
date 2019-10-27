@@ -285,8 +285,7 @@ locations:
       - "In the next room, there are some developers who are trying to ignore the noise from the party next-door."
       - "They are trying to choose the the language for their next project."
       - "'I'd like to use Java - it's reliable and straightforward.'"
-      - "'Java is terrible and so verbose! Can we use something more expressive, like javascript?'"
-      - "'I really like scal-'"
+      - "'Java is so verbose! Can't we use Scala?'"
       - "'Only if you want to die of old age before you finish compiling.'"
       - "Things are getting heated in here. You decide to ajudicate. There is a keyboard attached to the computer they are gathered around."
       - "You jump up to it and type:"
@@ -298,7 +297,17 @@ locations:
         outputs:
           - "As soon as you press the [[C]] key everyone jumps and shouts:"
           - "'A divine intervention! It has been proclaimed that C will be our language of choice!'"
-          - "You think about trying to add [[#]], but you're a horrible ghost goose, so you let them write their project in C."
+          - "You think about trying to add #, but you're a horrible ghost goose, so you let them write their project in C."
+      - inputs:
+        - "js"
+        - "javascript"
+        - "elm"
+        - "basic"
+        - "ts"
+        - "typescript"
+        - "matlab"
+        outputs:
+          - "lol no"
     south: true
     east: true
 
