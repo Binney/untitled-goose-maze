@@ -398,16 +398,37 @@ locations:
     north: true
     south: true
 
-  - name: "6-4 u - ?"
+  - name: "6-4 u - I choose you"
     x: 6
     y: 4
     intros:
-      - "qq todo"
+      - "You are on a road. The sign says 'Route 4'."
+      - "There is a youngster with a butteryfly-catcher over her shoulder. As soon as you are directly in front of her,
+      an exclamation mark appears above her head, and she approaches. You are frozen, you can't move!"
+      - "'I like shorts! They're comfy and easy to wear.' With those words you enter a battle scene. She sends out
+      some lame bug-like pokemon. You can:"
+      - "[Fight] [Item] [PKMN] [Run]"
     actions:
       - inputs:
-        - "qq todo"
+        - "run"
         outputs:
-          - "qq todo"
+          - "can't escape!"
+      - inputs:
+        - "pkmn"
+        - "pokemon"
+        outputs:
+          - "you have no pokemon!"
+      - inputs:
+        - "item"
+        outputs:
+          - "you look in your pockets. they're full of bells. that's no use!"
+      - inputs:
+        - "fight"
+        outputs:
+          - "You put on your game face and prepare your ultimate attack: [HONK BEAM]."
+          - "The level 5 metapod is vapourised. Ain't no pokecentre able to heal that mess."
+          - "Distraught, the bug-catcher ripostes: 'You think that's it? Pikach[u] I chose [yoooou]!'"
+          - "She slams down a pokemon. A pikachu fall out, fast asleep. 'Pika-[chuuuuu]zzzz...'"
     north: true
     east: true
 
