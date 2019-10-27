@@ -471,16 +471,32 @@ locations:
     north: true 
     east: true 
 
-  - name: "10-4 r - R"
+  - name: "10-4 r - pi r squared"
     x: 10
     y: 4
     intros:
-      - "You walk through the gate into a courtyard full of  TODO lol"
+      - "You walk through the gate into a courtyard full of rhombuses, hypercubes and fractals."
+      - "There is a wizard sat on the ground, surrounded by chalk scribblings."
     actions:
       - inputs:
-        - "qq todo"
+        - "talk"
+        - "talk to wizard"
+        - "talk to tim"
+        - "tim"
         outputs:
-          - "qq todo"
+          - "You approach the wizard, whose eyes warm up at the sight of your arrival."
+          - "'Hello, friend! You've come at the right time - I'm struggling with this equation.
+          I calculated it yesterday, but a vandal has removed one of the symbols!
+          Now all I'm left with is pi (smudge) squared.'"
+      - inputs:
+        - "r"
+        - "argh"
+        - "radius"
+        - "it's a circle innit"
+        - "solve"
+        - "solve equation"
+        outputs:
+          - "Ah! You are correct! All I was missing was [r]!"
     north: true 
     east: true 
 
