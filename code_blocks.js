@@ -101,27 +101,27 @@ class Location extends CodeBlock {
     this.addNewLine(this.getNextInputIndex(), `IF C$ = "look" GOTO ${startLine.number};`);
 
     if (this.west) {
-      this.addNewLine(this.getNextInputIndex(), `IF C$ = "west" OR C$ = "go west" GOTO ${Location.getLineFor(this.x - 1, this.y)};`);
+      this.addNewLine(this.getNextInputIndex(), `IF C$ = "west" OR C$ = "w" OR C$ = "go west" GOTO ${Location.getLineFor(this.x - 1, this.y)};`);
     } else {
-      this.addNewLine(this.getNextInputIndex(), `IF C$ = "west" OR C$ = "go west" GOTO ${bonkLine.number};`);
+      this.addNewLine(this.getNextInputIndex(), `IF C$ = "west" OR C$ = "w" OR C$ = "go west" GOTO ${bonkLine.number};`);
     }
 
     if (this.east) {
-      this.addNewLine(this.getNextInputIndex(), `IF C$ = "east" OR C$ = "go east" GOTO ${Location.getLineFor(this.x + 1, this.y)};`);
+      this.addNewLine(this.getNextInputIndex(), `IF C$ = "east" OR C$ = "e" OR C$ = "go east" GOTO ${Location.getLineFor(this.x + 1, this.y)};`);
     } else {
-      this.addNewLine(this.getNextInputIndex(), `IF C$ = "east" OR C$ = "go east" GOTO ${bonkLine.number};`);
+      this.addNewLine(this.getNextInputIndex(), `IF C$ = "east" OR C$ = "e" OR C$ = "go east" GOTO ${bonkLine.number};`);
     }
 
     if (this.north) {
-      this.addNewLine(this.getNextInputIndex(), `IF C$ = "north" OR C$ = "go north" GOTO ${Location.getLineFor(this.x, this.y - 1)};`);
+      this.addNewLine(this.getNextInputIndex(), `IF C$ = "north" OR C$ = "n" OR C$ = "go north" GOTO ${Location.getLineFor(this.x, this.y - 1)};`);
     } else {
-      this.addNewLine(this.getNextInputIndex(), `IF C$ = "north" OR C$ = "go north" GOTO ${bonkLine.number};`);
+      this.addNewLine(this.getNextInputIndex(), `IF C$ = "north" OR C$ = "n" OR C$ = "go north" GOTO ${bonkLine.number};`);
     }
 
     if (this.south) {
-      this.addNewLine(this.getNextInputIndex(), `IF C$ = "south" OR C$ = "go south" GOTO ${Location.getLineFor(this.x, this.y + 1)};`);
+      this.addNewLine(this.getNextInputIndex(), `IF C$ = "south" OR C$ = "s" OR C$ = "go south" GOTO ${Location.getLineFor(this.x, this.y + 1)};`);
     } else {
-      this.addNewLine(this.getNextInputIndex(), `IF C$ = "south" OR C$ = "go south" GOTO ${bonkLine.number};`);
+      this.addNewLine(this.getNextInputIndex(), `IF C$ = "south" OR C$ = "s" OR C$ = "go south" GOTO ${bonkLine.number};`);
     }
 
     if (this.actions) {
