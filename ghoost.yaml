@@ -411,16 +411,44 @@ locations:
     north: true
     east: true
 
-  - name: "7-4 s - ?"
+  - name: "7-4 s - Morpheus"
     x: 7
     y: 4
     intros:
-      - "qq todo"
+      - "You are in an office. It is 1998, the peak of our civilisation."
+      - "There is a man in a long trenchcoat, sitting at a computer terminal. He spins around on his wheely-chair and says:"
+      - "'Hello, goose. This is your last chance. After this, there is no turning back. You take the [blue pill], you wake up
+         in your lovely village and the story ends; you take the [red pill], you stay in wonderland and I show you how deep
+         the rabbithole goes.''"
+      - "He holds his hand out to you, both pill in his palm."
     actions:
       - inputs:
-        - "qq todo"
+        - "red"
+        - "red pill"
+        - "take red pill"
+        - "eat red pill"
         outputs:
-          - "qq todo"
+          - "You could eat the red pill, but the blue one looks so tasty!"
+      - inputs:
+        - "blue"
+        - "blue pill"
+        - "take blue pill"
+        - "eat blue pill"
+        outputs:
+          - "You could eat the blue pill, but the red one looks so tasty!"
+      - inputs:
+        - "both"
+        - "both pills"
+        - "take both"
+        - "take both pills"
+        - "eat both"
+        - "eat both pills"
+        outputs:
+          - "You quickly gobble up both pills. You were right, the tastes really compliment each other!"
+          - "The man in the trenchcoat starts screaming and writhing: 'What have you done? Why?' He starts to melt into green characters."
+          - "A woman in black leather bursts into the room on a motorbike: 'Oh no! Morpheus, what happened to you?
+          Are you okay?'"
+          - "'MORPHY-[ESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS]!'"
     north: true
     west: true
     east: true
@@ -564,28 +592,28 @@ locations:
           - "The puzzled figure sets about looking for its scythe. You notice a [T] emblazoned on its cloak."
     east: true
 
-  - name: "4-5 h - ?"
+  - name: "4-5 h - Hugo"
     x: 4
     y: 5
     intros:
-      - "qq todo"
+      - "you find a horse. he looks roughly four years old. he has a name badge on his horse-collar."
     actions:
       - inputs:
-        - "qq todo"
+          - "examine collar"
+          - "examine badge"
+          - "examine name badge"
         outputs:
-          - "qq todo"
+          - "the badge has a big H on it. on the reverse side the badge reads 'hugo', followed by an email to contact if the horse is lost."
+          - "before you can call the number, though, he bares his teeth as if to bite, so you back away."
     east: true
     west: true
 
-  - name: "5-5 e - ?"
+  - name: "5-5 e - Mosquito"
     x: 5
     y: 5
     intros:
-      - "qq todo"
-    actions:
-      - inputs:
-        - "qq todo"
-        outputs:
-          - "qq todo"
+      - "there is a thin droning sound here. it is utterly infuriating. it drills into your skull."
+      - "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+      - "suddenly your wings are covered in insect bites and you have no idea how they got there."
     west: true
     north: true
