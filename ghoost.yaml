@@ -168,15 +168,14 @@ locations:
           - "* I P"
           - "The first letter is obscured by some bracken."
       - inputs:
-        - "qq"
-        # - "move bracken"
-        # - "eat bracken"
+        - "move bracken"
+        - "eat bracken"
         outputs:
           - "qqq"
-          # - "You carefully and respectfully reposition the bracken to clear the view of the letters"
-      #     - "[[T]] I P"
-      #     - "Suddenly, the letters light up in glowing fire. The room is full with the chorus of a hundred angels."
-      #     - "Then suddenly everything stops. The torches are extinquished. A small sign lights up, saying 'Please insert 1bitcoin to continue.' Bloody paywalls!"
+          - "You carefully and respectfully reposition the bracken to clear the view of the letters"
+          - "[[T]] I P"
+          - "Suddenly, the letters light up in glowing fire. The room is full with the chorus of a hundred angels."
+          - "Then suddenly everything stops. The torches are extinquished. A small sign lights up, saying 'Please insert 1bitcoin to continue.' Bloody paywalls!"
     north: true
 
   - name: "2-2 w - George Dubya Bush"
