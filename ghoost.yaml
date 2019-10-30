@@ -218,7 +218,6 @@ locations:
         - "eat"
         - "eat paper"
         - "eat the paper"
-        - "eat the papers"
         - "eat script"
         - "eat pile of paper"
         - "consume paper"
@@ -246,7 +245,6 @@ locations:
         - "throw away boxes"
         outputs:
           - "Wasting no time, you use your almighty spectral beak to pull down and tear open the boxes."
-          - "What could be inside? Tax returns? Vat receipts? Stockpiles of cash for a rainy day?"
           - "Peering inside, you see the boxes are full of letters. But they're all the same letter."
           - "That letter is: 'S'" # todo: maybe 'sierra' / 'sugar' or summat?
     north: true
@@ -266,7 +264,6 @@ locations:
         - "listen to music"
         - "listen to lincoln"
         - "listen to lincoln stone"
-        - "lincoln stone"
         outputs:
           - "Why, it's only the ex-West End performer best known for his work in 'SoftPant 2016: A Christmas Carol' as Ebenezer Scrooge, Lincoln Stone!"
           - "Captivated by his majestic voice, you try to listen to what he is singing:"
@@ -305,8 +302,7 @@ locations:
     x: 7
     y: 3
     intros:
-      - "In the next room, there are some developers who are trying to ignore the noise from the party next-door."
-      - "They are trying to choose the the language for their next project."
+      - "In the next room, there are some developers trying to choose the the language for their next project."
       - "'I'd like to use Java - it's reliable and straightforward.'"
       - "'Java is so verbose! Can't we use Scala?'"
       - "'Only if you want to die of old age before you finish compiling.'"
@@ -551,18 +547,9 @@ locations:
           - "examine cassette"
           - "use cassette"
           - "play cassette"
-          - "examine cassette tape"
-          - "use cassette tape"
-          - "play cassette tape"
           - "examine tape"
           - "use tape"
-          - "examine cassette player"
-          - "use cassette player"
-          - "examine player"
           - "use player"
-          - "use cassette with player"
-          - "use cassette tape with player"
-          - "use tape with player"
         outputs:
           - "You pick up the cassette with your bill, pluck it into the cassette player, and hit 'play'."
           - "The player emits a terrible screeching sound:"
@@ -592,7 +579,6 @@ locations:
         - "r"
         - "argh"
         - "radius"
-        - "it's a circle innit"
         - "solve"
         - "solve equation"
         outputs:
