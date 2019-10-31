@@ -111,6 +111,7 @@ locations:
           - "examine chest"
           - "examine treasure chest"
           - "go to chest"
+          - "open chest"
           - "walk to chest"
         outputs:
           - "You take a few steps towards the gleaming treasure chest, hungry for the glittering prizes it doubtlessly has in store for you.
@@ -118,7 +119,7 @@ locations:
           - "You instinctively let out the worst curse word you know:"
           - "**HONK!**"
           - "What could cause so much pain? On inspection, it's some kind of toy bricks."
-          - "The offending article was a 2x4 brick, with two 2x2 bricks stacked on top on one side.
+          - "The offending article was a 2x4 brick, with two 2x2 bricks stacked on top on one end.
           You wonder what it looked like when it was standing upright."
     south: true
     west: true
@@ -141,10 +142,10 @@ locations:
           - "You waddle confidently up to the politician to quiz him on his plan for solving the bread crisis:"
           - "'Honk?'"
           - "Unfortunately, you are both a goose, and a ghost; both demographics which aren't big vote-winners for this particular politician, so he ignores you."
-          - "You follow him until he starts talking to a local software developer. Realising you are witnessing history unfold, you listen closely:"
+          - "You follow him until he starts talking to a local software developer. You listen closely:"
           - "'Hello, I'm Ed Milliband, from the labour party''"
-          - "They discuss house prices for a while, and then take an obligatory selfie, in which Ed Milliband performs his signature pose,
-          where he makes the shape of his party name's first letter on his forehead."
+          - "They discuss house prices for a while, and then take a selfie, in which Ed Milliband performs his signature pose,
+          making the shape of his party name's first letter on his forehead."
     south: true
 
 # ..TWIN.beaks.
@@ -171,11 +172,10 @@ locations:
         - "move bracken"
         - "eat bracken"
         outputs:
-          - "qqq"
           - "You carefully and respectfully reposition the bracken to clear the view of the letters"
           - "[[T]] I P"
           - "Suddenly, the letters light up in glowing fire. The room is full with the chorus of a hundred angels."
-          - "Then suddenly everything stops. The torches are extinquished. A small sign lights up, saying 'Please insert 1bitcoin to continue.' Bloody paywalls!"
+          - "Then suddenly everything stops. The torches are extinquished. A small sign lights up, saying 'Please insert 1 bitcoin to continue.' Bloody paywalls!"
     north: true
 
   - name: "2-2 w - George Dubya Bush"
@@ -192,7 +192,7 @@ locations:
           - "'Ow!'"
           - "Just as you suspected - it's George Bush junior! Startled, he says to you:"
           - "'I mis-underestimated you, ghosty-goose."
-          - "'Now, I know the human being and ghost-goose can co-exist peacefully, so I wish to *dub ya* with Honourary American Citizenship.'"
+          - "'Now, I know the human being and ghost-goose can co-exist peacefully, so I wish to [[dub ya]] with Honourary American Citizenship.'"
           - "You try to thank him, but you struggle to remember: What's his middle name again?"
     east: true
 
@@ -348,7 +348,7 @@ locations:
         - "unveil"
         outputs:
           - "Quickly, you dive under the veil"
-          - "'There is but one thing left to revolutionise. Presenting, the i-...'"
+          - "'There is but one thing left to revolutionise. Presenting, the [i]-...'"
           - "The speaker pulls the veil. Instinctively, you scream your fiercest war cry:"
           - "HONK!"
           - "The speaker is stunned and falls over."
@@ -457,7 +457,7 @@ locations:
       - inputs:
         - "fight"
         outputs:
-          - "You put on your game face and prepare your ultimate attack: [[HONK BEAM]]."
+          - "You put on your game face and prepare your ultimate attack: **HONK BEAM**."
           - "The level 5 metapod is vapourised. Ain't no pokecentre able to heal that mess."
           - "Distraught, the bug-catcher ripostes: 'You think that's it? Pikach[[u]] I chose [[yoooou]]!'"
           - "She slams down a pokemon. A pikachu fall out, fast asleep. 'Pika-[[chuuuuu]]zzzz...'"
