@@ -48,7 +48,7 @@ intro:
     - "oh, and..."
     - "you can also [[honk]]"
 global:
-  debug: true
+  debug: false # enable to print out location when entering each room
   actions:
     - inputs:
         - "honk"
