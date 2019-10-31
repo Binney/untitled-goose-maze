@@ -55,9 +55,10 @@ global:
       outputs:
         - "honk... onk... onk... nk..."
     - inputs:
-        - "f"
+        - "ryan gosling"
       outputs:
-        - "you pay respects"
+        - "[[YOU WIN!]]"
+        - "Have a happy [[HONK]]oween"
 locations:
 
 # ..KILL.bill..
